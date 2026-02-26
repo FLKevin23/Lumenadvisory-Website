@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumen — Page 2</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Navbar ─────────────────────────────────── -->
+  <nav class="navbar">
+
+    <!-- Left: Menu -->
+    <div class="nav-menu">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false">Menu ▾</button>
+      <div class="dropdown" id="dropdown">
+        <a href="#who-we-are">Who We Are</a>
+        <a href="#who-we-serve">Who We Serve</a>
+        <a href="#what-we-do">What We Do</a>
+        <a href="#our-partners">Our Partners</a>
+        <div class="dropdown-divider"></div>
+        <a href="#contact">Contact</a>
+        <a href="#insights">Insights</a>
+      </div>
+    </div>
+
+    <!-- Center: Logo -->
+    <a href="index.html" class="nav-brand">
+      <img
+        src="assets/images/logo/lumen-logo.png"
+        alt="Lumen"
+        class="nav-logo"
+        onload="this.nextElementSibling.style.display='none';"
+        onerror="this.style.display='none';"
+      />
+      <span class="nav-logo-text">Lumen</span>
+    </a>
+
+    <!-- Right: Language + Client Login -->
+    <div class="nav-actions">
+
+      <div class="lang-menu">
+        <button class="btn-lang" id="langToggle">EN ▾</button>
+        <div class="lang-dropdown" id="langDropdown">
+          <a href="#" class="lang-opt active" data-lang="en">English</a>
+          <a href="#" class="lang-opt" data-lang="de">Deutsch</a>
+        </div>
+      </div>
+
+      <a href="#" class="btn-login">Client Login</a>
+    </div>
+
+  </nav>
+
+  <!-- ── Page 2 · Sections ──────────────────────── -->
+  <main>
+
+    <section class="section section--1" id="team">
+      <span class="section-tag">Section 1</span>
+      <h2>Team</h2>
+      <p>Put faces to your brand. Introduce the people behind the work with photos, names, and short bios.</p>
+      <div class="skeleton-block">[ team content placeholder ]</div>
+    </section>
+
+    <section class="section section--2" id="process">
+      <span class="section-tag">Section 2</span>
+      <h2>Process</h2>
+      <p>Walk visitors through how you work — a numbered list or step diagram builds confidence and clarity.</p>
+      <div class="skeleton-block">[ process content placeholder ]</div>
+    </section>
+
+    <section class="section section--3" id="testimonials">
+      <span class="section-tag">Section 3</span>
+      <h2>Testimonials</h2>
+      <p>Social proof from real clients. Quotes, star ratings, or logos all work well in this space.</p>
+      <div class="skeleton-block">[ testimonials content placeholder ]</div>
+    </section>
+
+    <section class="section section--4" id="pricing">
+      <span class="section-tag">Section 4</span>
+      <h2>Pricing</h2>
+      <p>Be upfront about cost. Tiered plans or a simple price table reduce friction before the decision.</p>
+      <div class="skeleton-block">[ pricing content placeholder ]</div>
+    </section>
+
+    <section class="section section--5" id="faq">
+      <span class="section-tag">Section 5</span>
+      <h2>FAQ</h2>
+      <p>Answer the questions you hear most. This reduces support load and nudges hesitant visitors.</p>
+      <div class="skeleton-block">[ faq content placeholder ]</div>
+    </section>
+
+  </main>
+
+  <!-- ── Nav scripts ───────────────────────────── -->
+  <script>
+    // ── Menu dropdown ──
+    const toggle = document.getElementById('navToggle');
+    const dropdown = document.getElementById('dropdown');
+
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = dropdown.classList.toggle('open');
+      toggle.classList.toggle('open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen);
+      langDropdown.classList.remove('open');
+      langToggle.classList.remove('open');
+    });
+
+    // ── Language switcher ──
+    const langToggle   = document.getElementById('langToggle');
+    const langDropdown = document.getElementById('langDropdown');
+
+    langToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = langDropdown.classList.toggle('open');
+      langToggle.classList.toggle('open', isOpen);
+      dropdown.classList.remove('open');
+      toggle.classList.remove('open');
+    });
+
+    langDropdown.addEventListener('click', (e) => {
+      const opt = e.target.closest('.lang-opt');
+      if (!opt) return;
+      e.preventDefault();
+      langToggle.textContent = opt.dataset.lang.toUpperCase() + ' ▾';
+      langDropdown.querySelectorAll('.lang-opt').forEach(a => a.classList.remove('active'));
+      opt.classList.add('active');
+      langDropdown.classList.remove('open');
+      langToggle.classList.remove('open');
+    });
+
+    // ── Close both on outside click ──
+    document.addEventListener('click', () => {
+      dropdown.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', false);
+      langDropdown.classList.remove('open');
+      langToggle.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

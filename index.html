@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumen — Page 1</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark-page">
+
+  <!-- ── Navbar ─────────────────────────────────── -->
+  <nav class="navbar">
+
+    <!-- Left: Menu -->
+    <div class="nav-menu">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false">Menu ▾</button>
+      <div class="dropdown" id="dropdown">
+        <a href="#who-we-are">Who We Are</a>
+        <a href="#who-we-serve">Who We Serve</a>
+        <a href="#what-we-do">What We Do</a>
+        <a href="#our-partners">Our Partners</a>
+        <div class="dropdown-divider"></div>
+        <a href="#contact">Contact</a>
+        <a href="#insights">Insights</a>
+      </div>
+    </div>
+
+    <!-- Center: Logo -->
+    <a href="index.html" class="nav-brand">
+      <img
+        src="assets/images/logo/lumen-logo.png"
+        alt="Lumen"
+        class="nav-logo"
+        onload="this.nextElementSibling.style.display='none';"
+        onerror="this.style.display='none';"
+      />
+      <span class="nav-logo-text">Lumen</span>
+    </a>
+
+    <!-- Right: Language + Client Login -->
+    <div class="nav-actions">
+
+      <div class="lang-menu">
+        <button class="btn-lang" id="langToggle">EN ▾</button>
+        <div class="lang-dropdown" id="langDropdown">
+          <a href="#" class="lang-opt active" data-lang="en">English</a>
+          <a href="#" class="lang-opt" data-lang="de">Deutsch</a>
+        </div>
+      </div>
+
+      <a href="#" class="btn-login">Client Login</a>
+    </div>
+
+  </nav>
+
+  <!-- ── Page 1 · Sections ──────────────────────── -->
+  <main>
+
+    <section class="section section--1" id="hero">
+      <div class="hero-hook">
+        <h1 class="hero-headline">From family estates to digital assets.<br>One trustee.</h1>
+      </div>
+      <div class="hero-video-slot">
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          preload="auto"
+        >
+          <source
+            src="https://ppgwkuxotjeadkwzulju.supabase.co/storage/v1/object/public/videos/2026-01-30T13-17-39_cinematic_aerial_watermarked.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </section>
+
+    <section class="section section--2" id="about">
+      <div class="about-layout">
+        <div class="about-text">
+          <span class="section-tag">Section 2</span>
+          <h2>About</h2>
+          <div class="about-body">
+            <p>Located in the heart of Liechtenstein, Lumen Advisory brings clarity to complexity.</p>
+            <p>We partner with internationally minded entrepreneurs, founders and families who value structure, discretion and long-term thinking.</p>
+            <p>As an independent Liechtenstein trustee company, we combine fiduciary expertise with legal and notarial experience across multiple jurisdictions. Our work spans asset structuring, succession planning, relocation and long-term family governance.</p>
+            <p>Led by experienced professionals with international backgrounds, we operate with direct involvement and personal accountability in every mandate. Our offices in Liechtenstein, Vienna and Kraków reflect the cross-border perspective in which our clients live and operate.</p>
+            <p>With deep fiduciary expertise and clear direction, we enable confident, forward-looking action today and across generations.</p>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="assets/images/sections/1772113640a361.png" alt="Lumen Advisory" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--3" id="services">
+      <span class="section-tag">Section 3</span>
+      <h2>Services</h2>
+      <p>Showcase what you offer. Cards, icons, or a grid layout work well here to break down each service.</p>
+      <div class="skeleton-block">[ services content placeholder ]</div>
+    </section>
+
+    <section class="section section--4" id="portfolio">
+      <span class="section-tag">Section 4</span>
+      <h2>Portfolio</h2>
+      <p>Highlight your best work. Use images, case study links, or a filterable gallery.</p>
+      <div class="skeleton-block">[ portfolio content placeholder ]</div>
+    </section>
+
+    <section class="section section--5" id="contact">
+      <span class="section-tag">Section 5</span>
+      <h2>Contact</h2>
+      <p>Make it easy to reach you. A simple form, email link, or social handles go here.</p>
+      <div class="skeleton-block">[ contact content placeholder ]</div>
+    </section>
+
+  </main>
+
+  <!-- ── Nav scripts ───────────────────────────── -->
+  <script>
+    // ── Menu dropdown ──
+    const toggle = document.getElementById('navToggle');
+    const dropdown = document.getElementById('dropdown');
+
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = dropdown.classList.toggle('open');
+      toggle.classList.toggle('open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen);
+      // close lang if open
+      langDropdown.classList.remove('open');
+      langToggle.classList.remove('open');
+    });
+
+    // ── Language switcher ──
+    const langToggle   = document.getElementById('langToggle');
+    const langDropdown = document.getElementById('langDropdown');
+
+    langToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = langDropdown.classList.toggle('open');
+      langToggle.classList.toggle('open', isOpen);
+      // close menu if open
+      dropdown.classList.remove('open');
+      toggle.classList.remove('open');
+    });
+
+    langDropdown.addEventListener('click', (e) => {
+      const opt = e.target.closest('.lang-opt');
+      if (!opt) return;
+      e.preventDefault();
+      // update label
+      langToggle.textContent = opt.dataset.lang.toUpperCase() + ' ▾';
+      // mark active
+      langDropdown.querySelectorAll('.lang-opt').forEach(a => a.classList.remove('active'));
+      opt.classList.add('active');
+      langDropdown.classList.remove('open');
+      langToggle.classList.remove('open');
+    });
+
+    // ── Close both on outside click ──
+    document.addEventListener('click', () => {
+      dropdown.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', false);
+      langDropdown.classList.remove('open');
+      langToggle.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>
