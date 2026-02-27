@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lumen — Page 1</title>
+  <title>Lumen Advisory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="dark-page">
@@ -16,12 +19,11 @@
       <button class="nav-toggle" id="navToggle" aria-expanded="false">Menu ▾</button>
       <div class="dropdown" id="dropdown">
         <a href="#who-we-are">Who We Are</a>
-        <a href="#who-we-serve">Who We Serve</a>
         <a href="#what-we-do">What We Do</a>
         <a href="#our-partners">Our Partners</a>
-        <div class="dropdown-divider"></div>
         <a href="#contact">Contact</a>
-        <a href="#insights">Insights</a>
+        <div class="dropdown-divider"></div>
+        <a href="page2.html">Insights</a>
       </div>
     </div>
 
@@ -29,7 +31,7 @@
     <a href="index.html" class="nav-brand">
       <img
         src="assets/images/logo/lumen-logo.png"
-        alt="Lumen"
+        alt="Lumen Advisory"
         class="nav-logo"
         onload="this.nextElementSibling.style.display='none';"
         onerror="this.style.display='none';"
@@ -39,7 +41,6 @@
 
     <!-- Right: Language + Client Login -->
     <div class="nav-actions">
-
       <div class="lang-menu">
         <button class="btn-lang" id="langToggle">EN ▾</button>
         <div class="lang-dropdown" id="langDropdown">
@@ -47,39 +48,32 @@
           <a href="#" class="lang-opt" data-lang="de">Deutsch</a>
         </div>
       </div>
-
-      <a href="#" class="btn-login">Client Login</a>
+      <a href="login.html" class="btn-login" data-translate="header.clientLogin">Client Login</a>
     </div>
 
   </nav>
 
-  <!-- ── Page 1 · Sections ──────────────────────── -->
+  <!-- ── Sections ───────────────────────────────── -->
   <main>
 
+    <!-- 1 · Hero -->
     <section class="section section--1" id="hero">
-      <div class="hero-hook">
-        <h1 class="hero-headline">From family estates to digital assets.<br>One trustee.</h1>
+      <video class="hero-video" autoplay loop muted playsinline preload="auto">
+        <source src="https://ppgwkuxotjeadkwzulju.supabase.co/storage/v1/object/public/videos/2026-01-30T13-17-39_cinematic_aerial_watermarked.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-headline" data-translate="hero.titleBanner">From family estates to digital assets. One trustee.</h1>
+        <p class="hero-sub" data-translate="hero.subheadline">Boutique Trust Services for Discerning Clients</p>
       </div>
-      <div class="hero-video-slot">
-        <video
-          autoplay
-          loop
-          muted
-          playsinline
-          preload="auto"
-        >
-          <source
-            src="https://ppgwkuxotjeadkwzulju.supabase.co/storage/v1/object/public/videos/2026-01-30T13-17-39_cinematic_aerial_watermarked.mp4"
-            type="video/mp4"
-          />
-        </video>
-      </div>
+      <div class="hero-scroll"><span></span></div>
     </section>
 
-    <section class="section section--2" id="about">
-      <div class="about-layout">
+    <!-- 2 · About / Who We Are -->
+    <section class="section section--2" id="who-we-are">
+      <div class="about-layout reveal">
         <div class="about-text">
-          <span class="section-tag">Section 2</span>
+          <span class="section-tag">About Us</span>
           <h2>About</h2>
           <div class="about-body">
             <p>Located in the heart of Liechtenstein, Lumen Advisory brings clarity to complexity.</p>
@@ -95,72 +89,131 @@
       </div>
     </section>
 
-    <section class="section section--3" id="services">
-      <span class="section-tag">Section 3</span>
-      <h2>Services</h2>
-      <p>Showcase what you offer. Cards, icons, or a grid layout work well here to break down each service.</p>
-      <div class="skeleton-block">[ services content placeholder ]</div>
+    <!-- 3 · Practice Areas -->
+    <section class="section section--3" id="what-we-do">
+      <span class="section-tag reveal" data-translate="practiceAreas.title">Practice Areas</span>
+      <h2 class="reveal" data-translate="practiceAreas.title">Practice Areas</h2>
+      <div class="services-grid">
+        <a href="page2.html#section-2" class="service-card reveal">
+          <img src="assets/images/services/family-office.jpg" alt="Family Office" />
+          <div class="service-card-label" data-translate="practiceAreas.familyOffice">Family Office</div>
+        </a>
+        <a href="page2.html#section-2" class="service-card reveal">
+          <img src="assets/images/services/succession-planning.png" alt="Succession Planning" />
+          <div class="service-card-label" data-translate="practiceAreas.successionPlanning">Succession Planning</div>
+        </a>
+        <a href="page2.html#section-2" class="service-card reveal">
+          <img src="assets/images/services/relocation-services.jpg" alt="Relocation Services" />
+          <div class="service-card-label" data-translate="practiceAreas.relocationServices">Relocation Services</div>
+        </a>
+        <a href="page2.html#section-2" class="service-card reveal">
+          <img src="assets/images/services/philanthropy.jpg" alt="Philanthropy" />
+          <div class="service-card-label" data-translate="practiceAreas.philanthropy">Philanthropy</div>
+        </a>
+        <a href="page2.html#section-2" class="service-card reveal">
+          <img src="assets/images/services/accounting.jpg" alt="Accounting" />
+          <div class="service-card-label" data-translate="practiceAreas.accounting">Accounting</div>
+        </a>
+        <a href="page2.html#section-2" class="service-card reveal">
+          <img src="assets/images/services/legal-advice.jpg" alt="Legal Advice" />
+          <div class="service-card-label" data-translate="practiceAreas.legalAdvice">Legal Advice &amp; Notarial Services</div>
+        </a>
+      </div>
     </section>
 
-    <section class="section section--4" id="portfolio">
-      <span class="section-tag">Section 4</span>
-      <h2>Portfolio</h2>
-      <p>Highlight your best work. Use images, case study links, or a filterable gallery.</p>
-      <div class="skeleton-block">[ portfolio content placeholder ]</div>
+    <!-- 4 · Partners -->
+    <section class="section section--4" id="our-partners">
+      <span class="section-tag reveal" data-translate="partners.title">Our Partners</span>
+      <h2 class="reveal" data-translate="partners.title">Our Partners</h2>
+      <div class="partners-grid">
+        <div class="partner-card reveal">
+          <img src="assets/images/team/remo-mairhofer.jpg" alt="Remo Mairhofer" />
+          <div class="partner-name" data-translate="partners.remoName">Remo Mairhofer</div>
+          <div class="partner-title" data-translate="partners.remoTitle">Attorney at Law (FL) | Substitute Notary</div>
+          <div class="partner-bio" data-translate="partners.remoBio">M.A. HSG (Law), M.A. HSG (Banking and Finance)<br>LL.M., CII (Award)</div>
+        </div>
+        <div class="partner-card reveal">
+          <img src="assets/images/team/tomasz-klimek.jpg" alt="Dr. Tomasz Klimek" />
+          <div class="partner-name" data-translate="partners.tomaszName">Dr. iur. Tomasz Klimek</div>
+          <div class="partner-title" data-translate="partners.tomaszTitle">Attorney at Law (FL, A and PL) | Notary Public</div>
+          <div class="partner-bio" data-translate="partners.tomaszBio">LL.M.</div>
+        </div>
+      </div>
     </section>
 
+    <!-- 5 · Contact -->
     <section class="section section--5" id="contact">
-      <span class="section-tag">Section 5</span>
-      <h2>Contact</h2>
-      <p>Make it easy to reach you. A simple form, email link, or social handles go here.</p>
-      <div class="skeleton-block">[ contact content placeholder ]</div>
+      <span class="section-tag reveal" data-translate="contact.title">Contact &amp; Offices</span>
+      <h2 class="reveal" data-translate="contact.title">Contact &amp; Offices</h2>
+      <div class="contact-layout reveal">
+
+        <div class="contact-form-wrap">
+          <p class="contact-intro" data-translate="contact.getInTouch">Get in Touch</p>
+          <form class="contact-form" onsubmit="return false;">
+            <input type="text"  data-translate="contact.name"    placeholder="Name" />
+            <input type="email" data-translate="contact.email"   placeholder="Email" />
+            <textarea           data-translate="contact.message" placeholder="Message"></textarea>
+            <button type="submit" class="btn-submit" data-translate="contact.sendMessage">Send Message</button>
+          </form>
+        </div>
+
+        <div class="offices-wrap">
+          <p class="contact-intro" data-translate="contact.ourOffices">Our Offices</p>
+          <div class="office-block">
+            <div class="office-city" data-translate="contact.officeSchaan">Office Schaan</div>
+            <div class="office-detail">
+              <span data-translate="contact.schaanAddress1">Im Bretscha 7</span><br>
+              <span data-translate="contact.schaanAddress2">FL-9494 Schaan</span><br>
+              <span data-translate="contact.schaanPhone">Phone +423 340 11 40</span>
+            </div>
+          </div>
+          <div class="office-block">
+            <div class="office-city" data-translate="contact.officeVienna">Office Vienna</div>
+            <div class="office-detail">
+              <span data-translate="contact.viennaAddress1">Mahlerstraße 13/1B</span><br>
+              <span data-translate="contact.viennaAddress2">A-1010 Vienna</span><br>
+              <span data-translate="contact.viennaPhone">Phone +43 1 904 31 34</span>
+            </div>
+          </div>
+          <div class="office-block">
+            <div class="office-city" data-translate="contact.officeKrakow">Office Krakow</div>
+            <div class="office-detail">
+              <span data-translate="contact.krakowAddress1">ul. Kielecka 19</span><br>
+              <span data-translate="contact.krakowAddress2">PL-31-523 Kraków</span><br>
+              <span data-translate="contact.krakowPhone">Phone +43 1 904 31 34</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
   </main>
 
-  <!-- ── Nav scripts ───────────────────────────── -->
+  <!-- ── Scripts ────────────────────────────────── -->
   <script>
-    // ── Menu dropdown ──
     const toggle = document.getElementById('navToggle');
     const dropdown = document.getElementById('dropdown');
+    const langToggle   = document.getElementById('langToggle');
+    const langDropdown = document.getElementById('langDropdown');
 
     toggle.addEventListener('click', (e) => {
       e.stopPropagation();
       const isOpen = dropdown.classList.toggle('open');
       toggle.classList.toggle('open', isOpen);
       toggle.setAttribute('aria-expanded', isOpen);
-      // close lang if open
       langDropdown.classList.remove('open');
       langToggle.classList.remove('open');
     });
-
-    // ── Language switcher ──
-    const langToggle   = document.getElementById('langToggle');
-    const langDropdown = document.getElementById('langDropdown');
 
     langToggle.addEventListener('click', (e) => {
       e.stopPropagation();
       const isOpen = langDropdown.classList.toggle('open');
       langToggle.classList.toggle('open', isOpen);
-      // close menu if open
       dropdown.classList.remove('open');
       toggle.classList.remove('open');
     });
 
-    langDropdown.addEventListener('click', (e) => {
-      const opt = e.target.closest('.lang-opt');
-      if (!opt) return;
-      e.preventDefault();
-      // update label
-      langToggle.textContent = opt.dataset.lang.toUpperCase() + ' ▾';
-      // mark active
-      langDropdown.querySelectorAll('.lang-opt').forEach(a => a.classList.remove('active'));
-      opt.classList.add('active');
-      langDropdown.classList.remove('open');
-      langToggle.classList.remove('open');
-    });
-
-    // ── Close both on outside click ──
     document.addEventListener('click', () => {
       dropdown.classList.remove('open');
       toggle.classList.remove('open');
@@ -168,7 +221,16 @@
       langDropdown.classList.remove('open');
       langToggle.classList.remove('open');
     });
+
+    const revealObserver = new IntersectionObserver(
+      entries => entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); }
+      }),
+      { threshold: 0.12 }
+    );
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   </script>
+  <script type="module" src="./src/main.js"></script>
 
 </body>
 </html>

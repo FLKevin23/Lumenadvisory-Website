@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumen Advisory — Client Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --dark:   #0B1215;
+      --surface:#111d21;
+      --gold:   #C9A96E;
+      --cream:  #F8F2E6;
+      --accent: #E36D33;
+      --text:   #94a3b8;
+      --font-head: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+    }
+    body {
+      font-family: var(--font-body);
+      background: var(--dark);
+      color: var(--cream);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .login-wrap {
+      width: 100%;
+      max-width: 400px;
+    }
+    .login-logo {
+      display: block;
+      height: 48px;
+      width: auto;
+      margin: 0 auto 2.5rem;
+      object-fit: contain;
+    }
+    h1 {
+      font-family: var(--font-head);
+      font-size: 2.4rem;
+      font-weight: 300;
+      text-align: center;
+      color: var(--cream);
+      margin-bottom: .4rem;
+    }
+    .subtitle {
+      text-align: center;
+      color: var(--text);
+      font-size: .85rem;
+      letter-spacing: .05em;
+      margin-bottom: 2.5rem;
+    }
+    .msg {
+      display: none;
+      padding: .75rem 1rem;
+      border-radius: 6px;
+      font-size: .85rem;
+      margin-bottom: 1.5rem;
+    }
+    .msg.show { display: block; }
+    #error-message   { background: rgba(239,68,68,.12); color: #fca5a5; border: 1px solid rgba(239,68,68,.3); }
+    #success-message { background: rgba(16,185,129,.12); color: #6ee7b7; border: 1px solid rgba(16,185,129,.3); }
+    .form-group { margin-bottom: 1.5rem; }
+    label { display: block; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: .5rem; }
+    input[type="email"], input[type="password"] {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid rgba(201,169,110,.2);
+      border-radius: 6px;
+      padding: .8rem 1rem;
+      font-size: .95rem;
+      font-family: var(--font-body);
+      color: var(--cream);
+      outline: none;
+      transition: border-color .2s;
+    }
+    input[type="email"]:focus, input[type="password"]:focus { border-color: var(--gold); }
+    input::placeholder { color: var(--text); }
+    .btn-group { display: flex; gap: .75rem; margin-top: 2rem; }
+    .btn-signin {
+      flex: 1;
+      padding: .75rem;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: .85rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity .2s;
+    }
+    .btn-signin:hover:not(:disabled) { opacity: .85; }
+    .btn-create {
+      flex: 1;
+      padding: .75rem;
+      background: transparent;
+      color: var(--gold);
+      border: 1px solid rgba(201,169,110,.4);
+      border-radius: 6px;
+      font-size: .85rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+      cursor: pointer;
+      transition: background .2s, border-color .2s;
+    }
+    .btn-create:hover:not(:disabled) { background: rgba(201,169,110,.08); border-color: var(--gold); }
+    button:disabled { opacity: .45; cursor: not-allowed; }
+    .back-link { text-align: center; margin-top: 2rem; }
+    .back-link a { color: var(--text); text-decoration: none; font-size: .8rem; transition: color .2s; }
+    .back-link a:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+  <div class="login-wrap">
+    <img src="assets/images/logo/lumen-logo.png" alt="Lumen Advisory" class="login-logo" />
+    <h1>Welcome Back</h1>
+    <p class="subtitle">Sign in to your client portal</p>
+
+    <div id="error-message"   class="msg"></div>
+    <div id="success-message" class="msg"></div>
+
+    <form id="login-form">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required autocomplete="current-password" />
+      </div>
+      <div class="btn-group">
+        <button type="submit" class="btn-signin" id="login-btn">Sign In</button>
+      </div>
+    </form>
+
+    <form id="signup-form" style="margin-top: 1rem;">
+      <div class="btn-group">
+        <button type="submit" class="btn-create" id="signup-btn">Create Account</button>
+      </div>
+    </form>
+
+    <div class="back-link">
+      <a href="index.html">← Back to Home</a>
+    </div>
+  </div>
+
+  <script type="module" src="./src/login.js"></script>
+</body>
+</html>

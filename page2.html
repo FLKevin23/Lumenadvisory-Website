@@ -3,43 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lumen — Page 2</title>
+  <title>Lumen Advisory — Insights</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="dark-page">
 
   <!-- ── Navbar ─────────────────────────────────── -->
   <nav class="navbar">
-
-    <!-- Left: Menu -->
     <div class="nav-menu">
       <button class="nav-toggle" id="navToggle" aria-expanded="false">Menu ▾</button>
       <div class="dropdown" id="dropdown">
-        <a href="#who-we-are">Who We Are</a>
-        <a href="#who-we-serve">Who We Serve</a>
-        <a href="#what-we-do">What We Do</a>
-        <a href="#our-partners">Our Partners</a>
+        <a href="index.html#who-we-are">Who We Are</a>
+        <a href="#section-2">What We Do</a>
+        <a href="index.html#our-partners">Our Partners</a>
+        <a href="index.html#contact">Contact</a>
         <div class="dropdown-divider"></div>
-        <a href="#contact">Contact</a>
-        <a href="#insights">Insights</a>
+        <a href="page2.html">Insights</a>
       </div>
     </div>
-
-    <!-- Center: Logo -->
     <a href="index.html" class="nav-brand">
-      <img
-        src="assets/images/logo/lumen-logo.png"
-        alt="Lumen"
-        class="nav-logo"
-        onload="this.nextElementSibling.style.display='none';"
-        onerror="this.style.display='none';"
-      />
+      <img src="assets/images/logo/lumen-logo.png" alt="Lumen Advisory" class="nav-logo"
+        onload="this.nextElementSibling.style.display='none';" onerror="this.style.display='none';" />
       <span class="nav-logo-text">Lumen</span>
     </a>
-
-    <!-- Right: Language + Client Login -->
     <div class="nav-actions">
-
       <div class="lang-menu">
         <button class="btn-lang" id="langToggle">EN ▾</button>
         <div class="lang-dropdown" id="langDropdown">
@@ -47,57 +37,135 @@
           <a href="#" class="lang-opt" data-lang="de">Deutsch</a>
         </div>
       </div>
-
-      <a href="#" class="btn-login">Client Login</a>
+      <a href="login.html" class="btn-login" data-translate="header.clientLogin">Client Login</a>
     </div>
-
   </nav>
 
-  <!-- ── Page 2 · Sections ──────────────────────── -->
   <main>
 
-    <section class="section section--1" id="team">
-      <span class="section-tag">Section 1</span>
-      <h2>Team</h2>
-      <p>Put faces to your brand. Introduce the people behind the work with photos, names, and short bios.</p>
-      <div class="skeleton-block">[ team content placeholder ]</div>
+    <!-- 1 · Partner Bios -->
+    <section class="section section--1" id="section-1">
+      <div class="partners-detail reveal">
+
+        <div class="partner-detail-card">
+          <img src="assets/images/team/remo-mairhofer.jpg" alt="Remo Mairhofer" class="partner-detail-img" />
+          <div class="partner-detail-text">
+            <div class="partner-name" data-translate="insightsPage.remoName">Remo Mairhofer</div>
+            <div class="partner-title" data-translate="insightsPage.remoTitle">Attorney-at-Law | Trustee | Founder &amp; CEO</div>
+            <p data-translate="insightsPage.remoBio1">Remo Mairhofer is an Attorney-at-Law and licensed trustee, serving as Founder and CEO of LUMEN ADVISORY Trust reg. and founder of Mairhofer Advokatur in Liechtenstein.</p>
+            <p data-translate="insightsPage.remoBio2">He holds degrees in Law and Banking &amp; Finance from the University of St. Gallen and an LL.M. from the University of Sydney.</p>
+          </div>
+        </div>
+
+        <div class="partner-detail-card">
+          <img src="assets/images/team/tomasz-klimek.jpg" alt="Dr. Tomasz Klimek" class="partner-detail-img" />
+          <div class="partner-detail-text">
+            <div class="partner-name" data-translate="insightsPage.tomaszName">Dr. Tomasz Klimek</div>
+            <div class="partner-title" data-translate="insightsPage.tomaszTitle">Public Notary | Attorney-at-Law | Partner</div>
+            <p data-translate="insightsPage.tomaszBio1">Dr. Tomasz Klimek is a Public Notary and Attorney-at-Law in Liechtenstein and a partner at Mairhofer Advokatur.</p>
+            <p data-translate="insightsPage.tomaszBio2">Dr. Klimek holds a Doctor of Laws from the University of Vienna and is the only Polish-speaking attorney in Liechtenstein.</p>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <section class="section section--2" id="process">
-      <span class="section-tag">Section 2</span>
-      <h2>Process</h2>
-      <p>Walk visitors through how you work — a numbered list or step diagram builds confidence and clarity.</p>
-      <div class="skeleton-block">[ process content placeholder ]</div>
+    <!-- 2 · Services Detail -->
+    <section class="section section--2" id="section-2">
+      <span class="section-tag reveal" data-translate="insightsPage.servicesTitle">Our Services</span>
+      <h2 class="reveal" data-translate="insightsPage.servicesTitle">Our Services</h2>
+      <div class="services-detail-grid">
+
+        <div class="service-detail-card reveal">
+          <img src="assets/images/services/family-office.jpg" alt="Family Office" />
+          <div class="service-detail-body">
+            <h3 data-translate="insightsPage.familyOfficeTitle">Family Office</h3>
+            <p data-translate="insightsPage.familyOfficePara1">We act as a central point of coordination where family structures become complex and scattered across borders.</p>
+            <p data-translate="insightsPage.familyOfficePara2">In practice, this can involve a family with operating companies in Austria, investment assets held through a Liechtenstein foundation, and family members living between Switzerland and Singapore.</p>
+          </div>
+        </div>
+
+        <div class="service-detail-card reveal">
+          <img src="assets/images/services/succession-planning.png" alt="Succession Planning" />
+          <div class="service-detail-body">
+            <h3 data-translate="insightsPage.successionPlanningTitle">Succession Planning</h3>
+            <p data-translate="insightsPage.successionPlanningPara1">Succession planning is rarely about a single transfer; it is about control, protection, and continuity over many years.</p>
+            <p data-translate="insightsPage.successionPlanningPara2">A typical mandate may involve a German entrepreneur transferring business interests into a Liechtenstein foundation.</p>
+          </div>
+        </div>
+
+        <div class="service-detail-card reveal">
+          <img src="assets/images/services/relocation-services.jpg" alt="Relocation Services" />
+          <div class="service-detail-body">
+            <h3 data-translate="insightsPage.relocationServicesTitle">Relocation Services</h3>
+            <p data-translate="insightsPage.relocationServicesPara1">Relocation affects more than residency—it often changes how existing structures are viewed by authorities.</p>
+            <p data-translate="insightsPage.relocationServicesPara2">We guide clients through relocations by adjusting legal and fiduciary frameworks early.</p>
+          </div>
+        </div>
+
+        <div class="service-detail-card reveal">
+          <img src="assets/images/services/philanthropy.jpg" alt="Philanthropy" />
+          <div class="service-detail-body">
+            <h3 data-translate="insightsPage.philanthropyTitle">Philanthropy</h3>
+            <p data-translate="insightsPage.philanthropyPara1">Philanthropy works best when generosity is paired with structure.</p>
+            <p data-translate="insightsPage.philanthropyPara2">This may include setting up a Liechtenstein charitable foundation that funds educational or social projects abroad.</p>
+          </div>
+        </div>
+
+        <div class="service-detail-card reveal">
+          <img src="assets/images/services/accounting.jpg" alt="Accounting" />
+          <div class="service-detail-body">
+            <h3 data-translate="insightsPage.accountingTitle">Accounting</h3>
+            <p data-translate="insightsPage.accountingPara1">Accounting within fiduciary structures is not just about numbers—it is about control and traceability.</p>
+            <p data-translate="insightsPage.accountingPara2">A common scenario involves a Liechtenstein foundation holding participations in operating companies in Austria and Poland.</p>
+          </div>
+        </div>
+
+        <div class="service-detail-card reveal">
+          <img src="assets/images/services/legal-advice.jpg" alt="Legal Advice" />
+          <div class="service-detail-body">
+            <h3 data-translate="insightsPage.legalAdviceTitle">Legal Advice &amp; Notarial Services</h3>
+            <p data-translate="insightsPage.legalAdvicePara1">Legal advice and notarial services are fully integrated into our fiduciary work.</p>
+            <p data-translate="insightsPage.legalAdvicePara2">This often includes the notarial establishment of foundations or companies and ongoing legal supervision.</p>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <section class="section section--3" id="testimonials">
-      <span class="section-tag">Section 3</span>
-      <h2>Testimonials</h2>
-      <p>Social proof from real clients. Quotes, star ratings, or logos all work well in this space.</p>
-      <div class="skeleton-block">[ testimonials content placeholder ]</div>
+    <!-- 3 · Whitepaper -->
+    <section class="section section--3" id="section-3">
+      <span class="section-tag reveal" data-translate="insightsPage.whitepaperTitle">Whitepaper</span>
+      <h2 class="reveal" data-translate="insightsPage.whitepaperTitle">Whitepaper</h2>
+      <p class="reveal" data-translate="insightsPage.whitepaperDesc">Sanktionen Russland — Ein umfassender Überblick über die aktuellen rechtlichen Rahmenbedingungen und praktischen Implikationen.</p>
+      <a href="assets/whitepaper.pdf" target="_blank" class="btn-outline reveal" data-translate="insightsPage.downloadButton">Download Whitepaper (PDF)</a>
     </section>
 
-    <section class="section section--4" id="pricing">
-      <span class="section-tag">Section 4</span>
-      <h2>Pricing</h2>
-      <p>Be upfront about cost. Tiered plans or a simple price table reduce friction before the decision.</p>
-      <div class="skeleton-block">[ pricing content placeholder ]</div>
+    <!-- 4 · Newsletter -->
+    <section class="section section--4" id="section-4">
+      <span class="section-tag reveal" data-translate="insightsPage.blogTitle">Blog</span>
+      <h2 class="reveal" data-translate="insightsPage.blogTitle">Blog</h2>
+      <p class="reveal" data-translate="insightsPage.newsletterTagline">A monthly note on what quietly changes—and why it matters.</p>
+      <form class="newsletter-form reveal" onsubmit="return false;">
+        <input type="email" data-translate="insightsPage.newsletterPlaceholder" placeholder="Enter your email" />
+        <button type="submit" class="btn-login" data-translate="insightsPage.newsletterButton">Newsletter</button>
+      </form>
     </section>
 
-    <section class="section section--5" id="faq">
-      <span class="section-tag">Section 5</span>
-      <h2>FAQ</h2>
-      <p>Answer the questions you hear most. This reduces support load and nudges hesitant visitors.</p>
-      <div class="skeleton-block">[ faq content placeholder ]</div>
+    <!-- 5 · FAQ -->
+    <section class="section section--5" id="section-5">
+      <span class="section-tag reveal">FAQ</span>
+      <h2 class="reveal">FAQ</h2>
+      <p class="reveal">Frequently asked questions coming soon.</p>
     </section>
 
   </main>
 
-  <!-- ── Nav scripts ───────────────────────────── -->
   <script>
-    // ── Menu dropdown ──
     const toggle = document.getElementById('navToggle');
     const dropdown = document.getElementById('dropdown');
+    const langToggle   = document.getElementById('langToggle');
+    const langDropdown = document.getElementById('langDropdown');
 
     toggle.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -108,10 +176,6 @@
       langToggle.classList.remove('open');
     });
 
-    // ── Language switcher ──
-    const langToggle   = document.getElementById('langToggle');
-    const langDropdown = document.getElementById('langDropdown');
-
     langToggle.addEventListener('click', (e) => {
       e.stopPropagation();
       const isOpen = langDropdown.classList.toggle('open');
@@ -120,18 +184,6 @@
       toggle.classList.remove('open');
     });
 
-    langDropdown.addEventListener('click', (e) => {
-      const opt = e.target.closest('.lang-opt');
-      if (!opt) return;
-      e.preventDefault();
-      langToggle.textContent = opt.dataset.lang.toUpperCase() + ' ▾';
-      langDropdown.querySelectorAll('.lang-opt').forEach(a => a.classList.remove('active'));
-      opt.classList.add('active');
-      langDropdown.classList.remove('open');
-      langToggle.classList.remove('open');
-    });
-
-    // ── Close both on outside click ──
     document.addEventListener('click', () => {
       dropdown.classList.remove('open');
       toggle.classList.remove('open');
@@ -139,7 +191,16 @@
       langDropdown.classList.remove('open');
       langToggle.classList.remove('open');
     });
+
+    const revealObserver = new IntersectionObserver(
+      entries => entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); }
+      }),
+      { threshold: 0.12 }
+    );
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   </script>
+  <script type="module" src="./src/main.js"></script>
 
 </body>
 </html>
