@@ -18,12 +18,21 @@
     <div class="nav-menu">
       <button class="nav-toggle" id="navToggle" aria-expanded="false">Menu ▾</button>
       <div class="dropdown" id="dropdown">
-        <a href="#who-we-are">Who We Are</a>
-        <a href="#what-we-do">What We Do</a>
-        <a href="#our-partners">Our Partners</a>
-        <a href="#contact">Contact</a>
+        <a href="#who-we-are" data-translate="header.whoWeAre">Who We Are</a>
+        <a href="#what-we-do" data-translate="header.whatWeDo">What We Do</a>
+        <a href="#our-partners" data-translate="header.partners">Our Partners</a>
+        <a href="#contact" data-translate="header.contact">Contact</a>
+        <a href="#faq" data-translate="faq.title">FAQ</a>
         <div class="dropdown-divider"></div>
-        <a href="page2.html">Insights</a>
+        <a href="page2.html#section-3" data-translate="header.insights">Insights</a>
+        <div class="dropdown-divider"></div>
+        <span class="dropdown-label">Services</span>
+        <a href="family-office.html" data-translate="practiceAreas.familyOffice">Family Office</a>
+        <a href="succession-planning.html" data-translate="practiceAreas.successionPlanning">Succession Planning</a>
+        <a href="relocation.html" data-translate="practiceAreas.relocationServices">Relocation Services</a>
+        <a href="philanthropy.html" data-translate="practiceAreas.philanthropy">Philanthropy</a>
+        <a href="accounting.html" data-translate="practiceAreas.accounting">Accounting</a>
+        <a href="legal-notarial.html" data-translate="practiceAreas.legalAdvice">Legal &amp; Notarial Services</a>
       </div>
     </div>
 
@@ -58,29 +67,28 @@
 
     <!-- 1 · Hero -->
     <section class="section section--1" id="hero">
-      <video class="hero-video" autoplay loop muted playsinline preload="auto">
-        <source src="https://ppgwkuxotjeadkwzulju.supabase.co/storage/v1/object/public/videos/2026-01-30T13-17-39_cinematic_aerial_watermarked.mp4" type="video/mp4" />
+      <video class="hero-video" id="heroVideo" autoplay muted playsinline preload="auto">
+        <source src="https://ppgwkuxotjeadkwzulju.supabase.co/storage/v1/object/public/videos/Golden%20Light%20in%20Black%20water.mp4" type="video/mp4" />
       </video>
+      <div class="hero-loop-fade" id="heroLoopFade"></div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <h1 class="hero-headline" data-translate="hero.titleBanner">From family estates to digital assets. One trustee.</h1>
-        <p class="hero-sub" data-translate="hero.subheadline">Boutique Trust Services for Discerning Clients</p>
       </div>
       <div class="hero-scroll"><span></span></div>
     </section>
 
     <!-- 2 · About / Who We Are -->
     <section class="section section--2" id="who-we-are">
+      <h2 data-translate="aboutUs.title">About</h2>
       <div class="about-layout reveal">
         <div class="about-text">
-          <span class="section-tag">About Us</span>
-          <h2>About</h2>
           <div class="about-body">
-            <p>Located in the heart of Liechtenstein, Lumen Advisory brings clarity to complexity.</p>
-            <p>We partner with internationally minded entrepreneurs, founders and families who value structure, discretion and long-term thinking.</p>
-            <p>As an independent Liechtenstein trustee company, we combine fiduciary expertise with legal and notarial experience across multiple jurisdictions. Our work spans asset structuring, succession planning, relocation and long-term family governance.</p>
-            <p>Led by experienced professionals with international backgrounds, we operate with direct involvement and personal accountability in every mandate. Our offices in Liechtenstein, Vienna and Kraków reflect the cross-border perspective in which our clients live and operate.</p>
-            <p>With deep fiduciary expertise and clear direction, we enable confident, forward-looking action today and across generations.</p>
+            <p data-translate="aboutUs.para1">Most people don't start by looking for a trustee. They start with a question — how to protect what they've built, how to structure a cross-border life, or how to ensure what they've created outlasts them.</p>
+            <p data-translate="aboutUs.para2">Lumen Advisory exists for that moment.</p>
+            <p data-translate="aboutUs.para3">We partner with internationally minded entrepreneurs, founders and families — often self-made, often operating across multiple jurisdictions — who need clarity before they need a product.</p>
+            <p data-translate="aboutUs.para4">As an independent trustee company based in Liechtenstein, we combine fiduciary expertise with legal and notarial experience to build structures that actually fit: asset protection, succession planning, relocation and long-term family governance.</p>
+            <p data-translate="aboutUs.para5">Our team brings international backgrounds and direct involvement to every mandate. With offices in Liechtenstein, Vienna and Kraków, we work where our clients live and operate — particularly across Central and Eastern Europe.</p>
           </div>
         </div>
         <div class="about-image">
@@ -91,31 +99,30 @@
 
     <!-- 3 · Practice Areas -->
     <section class="section section--3" id="what-we-do">
-      <span class="section-tag reveal" data-translate="practiceAreas.title">Practice Areas</span>
       <h2 class="reveal" data-translate="practiceAreas.title">Practice Areas</h2>
       <div class="services-grid">
-        <a href="page2.html#section-2" class="service-card reveal">
-          <img src="assets/images/services/family-office.jpg" alt="Family Office" />
+        <a href="family-office.html" class="service-card reveal">
+          <img src="assets/images/portfolio/Luxury Alpine living room.jpg" alt="Family Office" />
           <div class="service-card-label" data-translate="practiceAreas.familyOffice">Family Office</div>
         </a>
-        <a href="page2.html#section-2" class="service-card reveal">
-          <img src="assets/images/services/succession-planning.png" alt="Succession Planning" />
+        <a href="succession-planning.html" class="service-card reveal">
+          <img src="assets/images/portfolio/Succession Planning.png" alt="Succession Planning" />
           <div class="service-card-label" data-translate="practiceAreas.successionPlanning">Succession Planning</div>
         </a>
-        <a href="page2.html#section-2" class="service-card reveal">
-          <img src="assets/images/services/relocation-services.jpg" alt="Relocation Services" />
+        <a href="relocation.html" class="service-card reveal">
+          <img src="assets/images/portfolio/Relocation.png" alt="Relocation Services" />
           <div class="service-card-label" data-translate="practiceAreas.relocationServices">Relocation Services</div>
         </a>
-        <a href="page2.html#section-2" class="service-card reveal">
-          <img src="assets/images/services/philanthropy.jpg" alt="Philanthropy" />
+        <a href="philanthropy.html" class="service-card reveal">
+          <img src="assets/images/portfolio/Philantropy.png" alt="Philanthropy" />
           <div class="service-card-label" data-translate="practiceAreas.philanthropy">Philanthropy</div>
         </a>
-        <a href="page2.html#section-2" class="service-card reveal">
-          <img src="assets/images/services/accounting.jpg" alt="Accounting" />
+        <a href="accounting.html" class="service-card reveal">
+          <img src="assets/images/portfolio/Accounting.png" alt="Accounting" />
           <div class="service-card-label" data-translate="practiceAreas.accounting">Accounting</div>
         </a>
-        <a href="page2.html#section-2" class="service-card reveal">
-          <img src="assets/images/services/legal-advice.jpg" alt="Legal Advice" />
+        <a href="legal-notarial.html" class="service-card reveal">
+          <img src="assets/images/portfolio/Legal and Notarial Services.png" alt="Legal Advice" />
           <div class="service-card-label" data-translate="practiceAreas.legalAdvice">Legal Advice &amp; Notarial Services</div>
         </a>
       </div>
@@ -123,27 +130,31 @@
 
     <!-- 4 · Partners -->
     <section class="section section--4" id="our-partners">
-      <span class="section-tag reveal" data-translate="partners.title">Our Partners</span>
       <h2 class="reveal" data-translate="partners.title">Our Partners</h2>
       <div class="partners-grid">
-        <div class="partner-card reveal">
+        <a href="page2.html" class="partner-card reveal">
           <img src="assets/images/team/remo-mairhofer.jpg" alt="Remo Mairhofer" />
           <div class="partner-name" data-translate="partners.remoName">Remo Mairhofer</div>
           <div class="partner-title" data-translate="partners.remoTitle">Attorney at Law (FL) | Substitute Notary</div>
           <div class="partner-bio" data-translate="partners.remoBio">M.A. HSG (Law), M.A. HSG (Banking and Finance)<br>LL.M., CII (Award)</div>
-        </div>
-        <div class="partner-card reveal">
+        </a>
+        <a href="page2.html#tomasz-anchor" class="partner-card reveal">
           <img src="assets/images/team/tomasz-klimek.jpg" alt="Dr. Tomasz Klimek" />
           <div class="partner-name" data-translate="partners.tomaszName">Dr. iur. Tomasz Klimek</div>
           <div class="partner-title" data-translate="partners.tomaszTitle">Attorney at Law (FL, A and PL) | Notary Public</div>
           <div class="partner-bio" data-translate="partners.tomaszBio">LL.M.</div>
-        </div>
+        </a>
       </div>
     </section>
 
-    <!-- 5 · Contact -->
-    <section class="section section--5" id="contact">
-      <span class="section-tag reveal" data-translate="contact.title">Contact &amp; Offices</span>
+    <!-- 5 · FAQ -->
+    <section class="section section--5" id="faq">
+      <h2 class="reveal" data-translate="faq.title">FAQ</h2>
+      <p class="reveal" data-translate="faq.comingSoon">Frequently asked questions coming soon.</p>
+    </section>
+
+    <!-- 6 · Contact -->
+    <section class="section section--6" id="contact">
       <h2 class="reveal" data-translate="contact.title">Contact &amp; Offices</h2>
       <div class="contact-layout reveal">
 
@@ -221,6 +232,32 @@
       langDropdown.classList.remove('open');
       langToggle.classList.remove('open');
     });
+
+    (function () {
+      const video = document.getElementById('heroVideo');
+      const fade  = document.getElementById('heroLoopFade');
+      const FADE_START = 1.5;
+
+      video.addEventListener('timeupdate', () => {
+        const remaining = video.duration - video.currentTime;
+        if (remaining <= FADE_START) {
+          fade.style.opacity = 1 - (remaining / FADE_START);
+        }
+      });
+
+      video.addEventListener('ended', () => {
+        fade.style.transition = 'none';
+        fade.style.opacity = '1';
+        setTimeout(() => {
+          video.currentTime = 0;
+          video.play();
+          requestAnimationFrame(() => requestAnimationFrame(() => {
+            fade.style.transition = 'opacity 1s ease';
+            fade.style.opacity = '0';
+          }));
+        }, 2000);
+      });
+    })();
 
     const revealObserver = new IntersectionObserver(
       entries => entries.forEach(e => {

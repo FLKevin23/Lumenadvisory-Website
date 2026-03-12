@@ -10,7 +10,7 @@
   --gold:    #C9A96E;
   --cream:   #F8F2E6;
   --accent:  #E36D33;
-  --text:    #94a3b8;
+  --text:    #ffffff;
   --nav-h:   60px;
 }
 
@@ -210,21 +210,6 @@ h1, h2, h3 { font-family: var(--font-head); }
 
 .section:nth-child(even) { background: #fafafa; }
 
-/* Section label chip */
-.section-tag {
-  display: inline-block;
-  font-family: var(--font-body);
-  font-size: .7rem;
-  font-weight: 600;
-  letter-spacing: .18em;
-  text-transform: uppercase;
-  padding: .3rem 1rem;
-  border-radius: 99px;
-  margin-bottom: 1.5rem;
-  background: transparent;
-  border: 1px solid var(--gold);
-  color: var(--gold);
-}
 
 .section h2 {
   font-family: var(--font-head);
@@ -238,7 +223,7 @@ h1, h2, h3 { font-family: var(--font-head); }
 .section p {
   max-width: 520px;
   font-size: 1rem;
-  color: #6b7280;
+  color: #fff;
   line-height: 1.8;
 }
 
@@ -274,6 +259,16 @@ h1, h2, h3 { font-family: var(--font-head); }
     var(--dark) 100%
   );
   z-index: 1;
+}
+
+.hero-loop-fade {
+  position: absolute;
+  inset: 0;
+  background: var(--dark);
+  opacity: 0;
+  transition: opacity 1s ease;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .hero-content {
@@ -326,6 +321,8 @@ h1, h2, h3 { font-family: var(--font-head); }
 }
 
 /* ── About layout ─────────────────────────────────── */
+.section--2 > h2 { margin-bottom: 2.5rem; }
+
 .about-layout {
   display: flex;
   align-items: center;
@@ -356,7 +353,7 @@ h1, h2, h3 { font-family: var(--font-head); }
 .about-body p {
   font-size: 1rem;
   line-height: 1.85;
-  color: #6b7280;
+  color: #fff;
   margin-bottom: 1.25rem;
 }
 
@@ -457,6 +454,12 @@ h1, h2, h3 { font-family: var(--font-head); }
 }
 
 /* ── Partners grid ────────────────────────────────── */
+.partner-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .partners-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -468,8 +471,9 @@ h1, h2, h3 { font-family: var(--font-head); }
 }
 
 .partner-card img {
-  width: 180px; height: 180px;
+  width: 240px; height: 240px;
   object-fit: cover;
+  object-position: top center;
   border-radius: 50%;
   display: block;
   margin-bottom: 1.5rem;
@@ -601,14 +605,15 @@ h1, h2, h3 { font-family: var(--font-head); }
 
 .partner-detail-card {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 280px 1fr;
   gap: 3rem;
   align-items: start;
 }
 
 .partner-detail-img {
-  width: 200px; height: 200px;
+  width: 260px; height: 260px;
   object-fit: cover;
+  object-position: top center;
   border-radius: 50%;
   border: 1px solid rgba(201,169,110,.25);
 }
@@ -691,8 +696,111 @@ h1, h2, h3 { font-family: var(--font-head); }
 .newsletter-form input:focus { border-color: var(--gold); }
 .newsletter-form input::placeholder { color: var(--text); }
 
+/* ── Service page hero ────────────────────────────── */
+.service-hero {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  margin-top: var(--nav-h);
+}
+
+.service-hero img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.service-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(11,18,21,.85) 0%, rgba(11,18,21,.35) 60%, transparent 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 2.5rem 3rem;
+}
+
+.service-hero-overlay h1 {
+  font-family: var(--font-head);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 300;
+  color: var(--cream);
+  letter-spacing: .02em;
+  margin: 0;
+}
+
+/* ── Service page bullets ─────────────────────────── */
+.service-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2.5rem;
+  max-width: 860px;
+}
+
+.service-bullets li {
+  padding-left: 1.25rem;
+  position: relative;
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
+.service-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: .65em;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+/* ── Service page FAQ ─────────────────────────────── */
+.faq-list {
+  max-width: 780px;
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.faq-item h3 {
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--gold);
+  margin: 0 0 .5rem;
+}
+
+.faq-item p {
+  margin: 0;
+  color: var(--cream);
+  font-size: .95rem;
+  line-height: 1.7;
+  opacity: .85;
+}
+
+/* ── Dropdown label (Services heading) ───────────────*/
+.dropdown-label {
+  display: block;
+  padding: .4rem 1.25rem .15rem;
+  font-family: var(--font-body);
+  font-size: .7rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  pointer-events: none;
+}
+
 /* ── Responsive ───────────────────────────────────── */
 @media (max-width: 768px) {
+  .service-hero { height: 280px; }
+  .service-hero-overlay { padding: 1.5rem; }
+  .service-bullets { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .partners-grid { grid-template-columns: 1fr; gap: 3rem; }
   .contact-layout { grid-template-columns: 1fr; gap: 3rem; }

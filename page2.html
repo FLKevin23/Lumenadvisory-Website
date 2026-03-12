@@ -16,12 +16,21 @@
     <div class="nav-menu">
       <button class="nav-toggle" id="navToggle" aria-expanded="false">Menu ▾</button>
       <div class="dropdown" id="dropdown">
-        <a href="index.html#who-we-are">Who We Are</a>
-        <a href="#section-2">What We Do</a>
-        <a href="index.html#our-partners">Our Partners</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="index.html#who-we-are" data-translate="header.whoWeAre">Who We Are</a>
+        <a href="index.html#what-we-do" data-translate="header.whatWeDo">What We Do</a>
+        <a href="index.html#our-partners" data-translate="header.partners">Our Partners</a>
+        <a href="index.html#contact" data-translate="header.contact">Contact</a>
+        <a href="index.html#faq" data-translate="faq.title">FAQ</a>
         <div class="dropdown-divider"></div>
-        <a href="page2.html">Insights</a>
+        <a href="page2.html#section-3" data-translate="header.insights">Insights</a>
+        <div class="dropdown-divider"></div>
+        <span class="dropdown-label">Services</span>
+        <a href="family-office.html" data-translate="practiceAreas.familyOffice">Family Office</a>
+        <a href="succession-planning.html" data-translate="practiceAreas.successionPlanning">Succession Planning</a>
+        <a href="relocation.html" data-translate="practiceAreas.relocationServices">Relocation Services</a>
+        <a href="philanthropy.html" data-translate="practiceAreas.philanthropy">Philanthropy</a>
+        <a href="accounting.html" data-translate="practiceAreas.accounting">Accounting</a>
+        <a href="legal-notarial.html" data-translate="practiceAreas.legalAdvice">Legal &amp; Notarial Services</a>
       </div>
     </div>
     <a href="index.html" class="nav-brand">
@@ -47,7 +56,7 @@
     <section class="section section--1" id="section-1">
       <div class="partners-detail reveal">
 
-        <div class="partner-detail-card">
+        <div class="partner-detail-card" id="partner-remo">
           <img src="assets/images/team/remo-mairhofer.jpg" alt="Remo Mairhofer" class="partner-detail-img" />
           <div class="partner-detail-text">
             <div class="partner-name" data-translate="insightsPage.remoName">Remo Mairhofer</div>
@@ -57,7 +66,9 @@
           </div>
         </div>
 
-        <div class="partner-detail-card">
+        <div id="tomasz-anchor" style="height:0;margin:0;padding:0;"></div>
+
+        <div class="partner-detail-card" id="partner-tomasz">
           <img src="assets/images/team/tomasz-klimek.jpg" alt="Dr. Tomasz Klimek" class="partner-detail-img" />
           <div class="partner-detail-text">
             <div class="partner-name" data-translate="insightsPage.tomaszName">Dr. Tomasz Klimek</div>
@@ -72,12 +83,11 @@
 
     <!-- 2 · Services Detail -->
     <section class="section section--2" id="section-2">
-      <span class="section-tag reveal" data-translate="insightsPage.servicesTitle">Our Services</span>
       <h2 class="reveal" data-translate="insightsPage.servicesTitle">Our Services</h2>
       <div class="services-detail-grid">
 
-        <div class="service-detail-card reveal">
-          <img src="assets/images/services/family-office.jpg" alt="Family Office" />
+        <div class="service-detail-card reveal" id="service-family-office">
+          <img src="assets/images/portfolio/Luxury Alpine living room.jpg" alt="Family Office" />
           <div class="service-detail-body">
             <h3 data-translate="insightsPage.familyOfficeTitle">Family Office</h3>
             <p data-translate="insightsPage.familyOfficePara1">We act as a central point of coordination where family structures become complex and scattered across borders.</p>
@@ -85,8 +95,8 @@
           </div>
         </div>
 
-        <div class="service-detail-card reveal">
-          <img src="assets/images/services/succession-planning.png" alt="Succession Planning" />
+        <div class="service-detail-card reveal" id="service-succession-planning">
+          <img src="assets/images/portfolio/Succession Planning.png" alt="Succession Planning" />
           <div class="service-detail-body">
             <h3 data-translate="insightsPage.successionPlanningTitle">Succession Planning</h3>
             <p data-translate="insightsPage.successionPlanningPara1">Succession planning is rarely about a single transfer; it is about control, protection, and continuity over many years.</p>
@@ -94,8 +104,8 @@
           </div>
         </div>
 
-        <div class="service-detail-card reveal">
-          <img src="assets/images/services/relocation-services.jpg" alt="Relocation Services" />
+        <div class="service-detail-card reveal" id="service-relocation">
+          <img src="assets/images/portfolio/Relocation.png" alt="Relocation Services" />
           <div class="service-detail-body">
             <h3 data-translate="insightsPage.relocationServicesTitle">Relocation Services</h3>
             <p data-translate="insightsPage.relocationServicesPara1">Relocation affects more than residency—it often changes how existing structures are viewed by authorities.</p>
@@ -103,8 +113,8 @@
           </div>
         </div>
 
-        <div class="service-detail-card reveal">
-          <img src="assets/images/services/philanthropy.jpg" alt="Philanthropy" />
+        <div class="service-detail-card reveal" id="service-philanthropy">
+          <img src="assets/images/portfolio/Philantropy.png" alt="Philanthropy" />
           <div class="service-detail-body">
             <h3 data-translate="insightsPage.philanthropyTitle">Philanthropy</h3>
             <p data-translate="insightsPage.philanthropyPara1">Philanthropy works best when generosity is paired with structure.</p>
@@ -112,8 +122,8 @@
           </div>
         </div>
 
-        <div class="service-detail-card reveal">
-          <img src="assets/images/services/accounting.jpg" alt="Accounting" />
+        <div class="service-detail-card reveal" id="service-accounting">
+          <img src="assets/images/portfolio/Accounting.png" alt="Accounting" />
           <div class="service-detail-body">
             <h3 data-translate="insightsPage.accountingTitle">Accounting</h3>
             <p data-translate="insightsPage.accountingPara1">Accounting within fiduciary structures is not just about numbers—it is about control and traceability.</p>
@@ -121,8 +131,8 @@
           </div>
         </div>
 
-        <div class="service-detail-card reveal">
-          <img src="assets/images/services/legal-advice.jpg" alt="Legal Advice" />
+        <div class="service-detail-card reveal" id="service-legal-advice">
+          <img src="assets/images/portfolio/Legal and Notarial Services.png" alt="Legal Advice" />
           <div class="service-detail-body">
             <h3 data-translate="insightsPage.legalAdviceTitle">Legal Advice &amp; Notarial Services</h3>
             <p data-translate="insightsPage.legalAdvicePara1">Legal advice and notarial services are fully integrated into our fiduciary work.</p>
@@ -135,7 +145,6 @@
 
     <!-- 3 · Whitepaper -->
     <section class="section section--3" id="section-3">
-      <span class="section-tag reveal" data-translate="insightsPage.whitepaperTitle">Whitepaper</span>
       <h2 class="reveal" data-translate="insightsPage.whitepaperTitle">Whitepaper</h2>
       <p class="reveal" data-translate="insightsPage.whitepaperDesc">Sanktionen Russland — Ein umfassender Überblick über die aktuellen rechtlichen Rahmenbedingungen und praktischen Implikationen.</p>
       <a href="assets/whitepaper.pdf" target="_blank" class="btn-outline reveal" data-translate="insightsPage.downloadButton">Download Whitepaper (PDF)</a>
@@ -143,20 +152,12 @@
 
     <!-- 4 · Newsletter -->
     <section class="section section--4" id="section-4">
-      <span class="section-tag reveal" data-translate="insightsPage.blogTitle">Blog</span>
       <h2 class="reveal" data-translate="insightsPage.blogTitle">Blog</h2>
       <p class="reveal" data-translate="insightsPage.newsletterTagline">A monthly note on what quietly changes—and why it matters.</p>
       <form class="newsletter-form reveal" onsubmit="return false;">
         <input type="email" data-translate="insightsPage.newsletterPlaceholder" placeholder="Enter your email" />
         <button type="submit" class="btn-login" data-translate="insightsPage.newsletterButton">Newsletter</button>
       </form>
-    </section>
-
-    <!-- 5 · FAQ -->
-    <section class="section section--5" id="section-5">
-      <span class="section-tag reveal">FAQ</span>
-      <h2 class="reveal">FAQ</h2>
-      <p class="reveal">Frequently asked questions coming soon.</p>
     </section>
 
   </main>
