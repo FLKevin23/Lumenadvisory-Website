@@ -40,10 +40,10 @@ export const de = {
   partners: {
     title: 'Unsere Partner',
     remoName: 'Remo Mairhofer',
-    remoTitle: 'Rechtsanwalt (FL) | Stellvertretender Notar',
+    remoTitle: 'Rechtsanwalt | Treuhänder | Gründer & CEO',
     remoBio: 'M.A. HSG (Recht), M.A. HSG (Banking and Finance)<br>LL.M., CII (Award)',
     tomaszName: 'Dr. iur. Tomasz Klimek',
-    tomaszTitle: 'Rechtsanwalt (FL, A und PL) | Notar',
+    tomaszTitle: 'Öffentlicher Notar | Rechtsanwalt (FL, A & PL) | Partner',
     tomaszBio: 'LL.M.'
   },
 
@@ -66,7 +66,7 @@ export const de = {
     officeKrakow: 'Büro Krakau',
     krakowAddress1: 'ul. Kielecka 19',
     krakowAddress2: 'PL-31-523 Kraków',
-    krakowPhone: 'Telefon +43 1 904 31 34'
+    krakowPhone: 'Telefon +48 600 786 706'
   },
 
   footer: {
@@ -82,7 +82,7 @@ export const de = {
     remoBio1: 'Remo Mairhofer ist Rechtsanwalt und lizenzierter Treuhänder, Gründer und CEO der LUMEN ADVISORY Trust reg. und Gründer von Mairhofer Advokatur in Liechtenstein. Seine Arbeit konzentriert sich auf die Gründung, Verwaltung und laufende Überwachung von Treuhand- und Stiftungsstrukturen und berät Intermediäre und Privatpersonen in grenzüberschreitenden Strukturen.',
     remoBio2: 'Er hat Abschlüsse in Jura und Banking & Finance von der Universität St. Gallen und einen LL.M. von der Universität Sydney. Er ist in der liechtensteinischen Kanzlei zugelassen, hat die liechtensteinischen Treuhänderprüfungen bestanden und ist Stellvertreter Richter am Verfassungsgericht Liechtensteins.',
     tomaszName: 'Dr. Tomasz Klimek',
-    tomaszTitle: 'Öffentlicher Notar | Rechtsanwalt | Partner',
+    tomaszTitle: 'Öffentlicher Notar | Rechtsanwalt (FL, A & PL) | Partner',
     tomaszBio1: 'Dr. Tomasz Klimek ist öffentlicher Notar und Rechtsanwalt in Liechtenstein sowie Partner bei Mairhofer Advokatur. Er berät und beaufsichtigt rechtlich komplexe Treuhand- und Unternehmensstrukturen, mit besonderem Fokus auf grenzüberschreitende Stiftungen, Holdinggesellschaften und Vermögensverwaltungsanordnungen in Liechtenstein, Österreich und Polen.',
     tomaszBio2: 'Dr. Klimek hat einen Doktor der Rechte von der Universität Wien und mehrere LL.M. Abschlüsse in Unternehmens-, Stiftungs- und Treuhandrecht. Er ist in Liechtenstein, Österreich und Polen zugelassen und ist der einzige polnischsprachige Rechtsanwalt in Liechtenstein, was ihm ermöglicht, Gerichtsbarkeiten mit Präzision und Verantwortung zu überbrücken.',
     servicesTitle: 'Unsere Dienstleistungen',
@@ -116,7 +116,16 @@ export const de = {
 
   faq: {
     title: 'FAQ',
-    comingSoon: 'Häufig gestellte Fragen folgen in Kürze.'
+    faq1q: 'Was macht ein unabhängiges Treuhandunternehmen eigentlich?',
+    faq1a: 'Ein Treuhandunternehmen verwaltet die rechtlichen Strukturen, die Vermögen halten und schützen – Stiftungen, Trusts und Gesellschaften. Wir übernehmen die Governance, Administration und Kontinuität dieser Strukturen im Auftrag unserer Mandanten. Anders als eine Privatbank oder ein Vermögensverwalter investieren wir kein Geld. Wir bauen und pflegen die Architektur darum herum.',
+    faq2q: 'Warum Liechtenstein?',
+    faq2a: 'Liechtenstein verfügt über eines der ältesten und angesehensten Rechtsrahmen für Stiftungen und Trusts weltweit – das Stiftungsrecht datiert auf 1926. Es ist Teil des Europäischen Wirtschaftsraums, bietet eine starke Regulierungsaufsicht und genießt einen Ruf für Rechtssicherheit und Diskretion. Für international ausgerichtete Mandanten bietet es eine glaubwürdige und anerkannte Heimat für langfristige Strukturen.',
+    faq3q: 'Mit wem arbeiten Sie typischerweise zusammen?',
+    faq3a: 'Unsere Mandanten sind typischerweise selbstgemachte Unternehmer, Gründer und Familien mit Vermögen, Geschäftsinteressen oder Familienmitgliedern in mehreren Ländern. Viele restrukturieren ihre Vermögensstruktur oder planen für die nächste Generation. Sie kommen zu uns nicht weil sie ein Produkt gefunden haben, sondern weil sie eine Frage haben, die bisher nicht gut beantwortet wurde.',
+    faq4q: 'Muss ich in Liechtenstein wohnen, um mit Ihnen zu arbeiten?',
+    faq4a: 'Nein. Die meisten unserer Mandanten sind nicht in Liechtenstein ansässig. Wir arbeiten vorwiegend in Mittel- und Osteuropa – mit besonderem Fokus auf Österreich, Polen und Deutschland – und beraten international. Unsere Büros in Schaan, Wien und Krakau ermöglichen es uns, dort zu arbeiten, wo unsere Mandanten leben und wirken.',
+    faq5q: 'Wie beginnen wir?',
+    faq5a: 'Die meisten Mandate beginnen mit einem Gespräch, nicht mit einem Formular. Wir nehmen uns Zeit, Ihre Situation, Ihre Ziele und ob unsere Expertise die richtige Passung ist zu verstehen. Daraus leiten wir einen ersten Schritt ab – eine Strukturanalyse, eine spezifische Transaktion oder ein längerfristiges Beratungsmandat.'
   },
 
   familyOfficePage: {

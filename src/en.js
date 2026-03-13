@@ -40,10 +40,10 @@ export const en = {
   partners: {
     title: 'Our Partners',
     remoName: 'Remo Mairhofer',
-    remoTitle: 'Attorney at Law (FL) | Substitute Notary',
+    remoTitle: 'Attorney-at-Law | Trustee | Founder & CEO',
     remoBio: 'M.A. HSG (Law), M.A. HSG (Banking and Finance)<br>LL.M., CII (Award)',
     tomaszName: 'Dr. iur. Tomasz Klimek',
-    tomaszTitle: 'Attorney at Law (FL, A and PL) | Notary Public',
+    tomaszTitle: 'Public Notary | Attorney-at-Law (FL, A & PL) | Partner',
     tomaszBio: 'LL.M.'
   },
 
@@ -66,7 +66,7 @@ export const en = {
     officeKrakow: 'Office Krakow',
     krakowAddress1: 'ul. Kielecka 19',
     krakowAddress2: 'PL-31-523 Kraków',
-    krakowPhone: 'Phone +43 1 904 31 34'
+    krakowPhone: 'Phone +48 600 786 706'
   },
 
   footer: {
@@ -82,7 +82,7 @@ export const en = {
     remoBio1: 'Remo Mairhofer is an Attorney-at-Law and licensed trustee, serving as Founder and CEO of LUMEN ADVISORY Trust reg. and founder of Mairhofer Advokatur in Liechtenstein. His work focuses on the establishment, governance, and ongoing supervision of trust and foundation structures, advising intermediaries and private clients in cross-border structures.',
     remoBio2: 'He holds degrees in Law and Banking & Finance from the University of St. Gallen and an LL.M. from the University of Sydney. He is admitted to the Liechtenstein Bar, has completed the Liechtenstein trustee examinations, and serves as a Substitute Judge at the Constitutional Court of Liechtenstein.',
     tomaszName: 'Dr. Tomasz Klimek',
-    tomaszTitle: 'Public Notary | Attorney-at-Law | Partner',
+    tomaszTitle: 'Public Notary | Attorney-at-Law (FL, A & PL) | Partner',
     tomaszBio1: 'Dr. Tomasz Klimek is a Public Notary and Attorney-at-Law in Liechtenstein and a partner at Mairhofer Advokatur. He advises on and oversees legally complex fiduciary and corporate structures, with a particular focus on cross-border foundations, holding entities, and asset-holding arrangements involving Liechtenstein, Austria, and Poland.',
     tomaszBio2: 'Dr. Klimek holds a Doctor of Laws from the University of Vienna and multiple LL.M. degrees in company, foundation, and trust law. He is admitted to the bar in Liechtenstein, Austria, and Poland and is the only Polish-speaking attorney in Liechtenstein, allowing him to bridge jurisdictions with precision and accountability.',
     servicesTitle: 'Our Services',
@@ -105,7 +105,7 @@ export const en = {
     legalAdvicePara1: 'Legal advice and notarial services are fully integrated into our fiduciary work, ensuring that structures covering both conventional and digital assets are not only well designed but also properly executed and maintained.',
     legalAdvicePara2: 'This increasingly includes the legal structuring of foundations or companies that hold tokenized assets, NFT collections, or crypto portfolios alongside traditional real estate and equity—requiring legally sound frameworks for custody arrangements, smart contract governance, and cross-border digital asset transactions.',
     whitepaperTitle: 'Whitepaper',
-    whitepaperDesc: 'Sanktionen Russland - Ein umfassender Überblick über die aktuellen rechtlichen Rahmenbedingungen und praktischen Implikationen.',
+    whitepaperDesc: 'Russia Sanctions — A comprehensive overview of the current legal framework and practical implications.',
     downloadButton: 'Download Whitepaper (PDF)',
     blogTitle: 'Blog',
     blogDesc: 'Our blog offers perspectives on wealth, legacy, and structure that matter today and shape tomorrow.',
@@ -116,7 +116,16 @@ export const en = {
 
   faq: {
     title: 'FAQ',
-    comingSoon: 'Frequently asked questions coming soon.'
+    faq1q: 'What does an independent trustee company actually do?',
+    faq1a: 'A trustee company manages the legal structures that hold and protect assets — foundations, trusts, and companies. We handle the governance, administration, and continuity of these structures on behalf of our clients. Unlike a private bank or wealth manager, we don\'t invest money. We build and maintain the architecture around it.',
+    faq2q: 'Why Liechtenstein?',
+    faq2a: 'Liechtenstein has one of the oldest and most respected legal frameworks for foundations and trusts in the world — its foundation law dates to 1926. It sits within the European Economic Area, offers strong regulatory oversight, and maintains a reputation for legal stability and discretion. For internationally minded clients, it provides a credible and well-recognised home for long-term structures.',
+    faq3q: 'Who do you typically work with?',
+    faq3a: 'Our clients are typically self-made entrepreneurs, founders and families with assets, business interests or family members across multiple countries. Many are relocating, restructuring their holdings, or planning for the next generation. They come to us not because they have found a product, but because they have a question that hasn\'t been answered well yet.',
+    faq4q: 'Do I need to live in Liechtenstein to work with you?',
+    faq4a: 'No. Most of our clients are not based in Liechtenstein. We work primarily across Central and Eastern Europe — with a particular focus on Austria, Poland and Germany — and advise internationally. Our offices in Schaan, Vienna and Kraków mean we can meet clients where they live and operate.',
+    faq5q: 'How do we begin?',
+    faq5a: 'Most mandates start with a conversation, not a form. We take time to understand your situation, your goals, and whether our expertise is the right fit. From there we scope a first engagement — a structural review, a specific transaction, or a longer-term advisory mandate.'
   },
 
   familyOfficePage: {
