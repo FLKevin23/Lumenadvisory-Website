@@ -308,5 +308,13 @@
   </script>
   <script type="module" src="./src/main.js"></script>
 
+  <!-- Smooth scroll deceleration -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script>
+    const lenis = new Lenis({ lerp: 0.08, smoothWheel: true });
+    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+  </script>
+
 </body>
 </html>

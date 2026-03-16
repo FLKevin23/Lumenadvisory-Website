@@ -15,7 +15,9 @@
 }
 
 /* ── Base ─────────────────────────────────────────── */
-html { scroll-behavior: smooth; }
+html { scroll-behavior: auto; }
+/* Lenis smooth scroll — override browser native smooth to prevent end-of-scroll jump */
+.lenis.lenis-smooth { scroll-behavior: auto; }
 
 body {
   font-family: var(--font-body);
