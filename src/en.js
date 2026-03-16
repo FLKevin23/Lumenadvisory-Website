@@ -13,7 +13,7 @@ export const en = {
   },
 
   hero: {
-    titleBanner: 'From family estates to digital assets. One trustee',
+    titleBanner: 'From family estates to digital assets. One trustee.',
     subheadline: 'Boutique Trust Services for Discerning Clients',
     value: 'We combine Traditional Values with Next Gen Execution'
   },

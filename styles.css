@@ -4,7 +4,7 @@
 /* ── Design tokens ────────────────────────────────── */
 :root {
   --font-head: 'Cormorant Garamond', Georgia, serif;
-  --font-body: 'Inter', system-ui, sans-serif;
+  --font-body: 'Karla', sans-serif;
   --dark:    #0B1215;
   --surface: #111d21;
   --gold:    #C9A96E;
@@ -182,7 +182,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   transition: color .15s, background .15s;
 }
 .lang-dropdown a:hover  { color: var(--cream); background: rgba(201,169,110,.06); }
-.lang-dropdown a.active { color: var(--gold); font-weight: 600; }
+.lang-dropdown a.active { color: #F5F5F5; font-weight: 600; }
 
 /* Client Login */
 .btn-login {
@@ -292,7 +292,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   font-family: var(--font-head);
   font-size: clamp(3.2rem, 7vw, 6.5rem);
   font-weight: 300;
-  line-height: 1.08;
+  line-height: 1.00;
   letter-spacing: -.01em;
   color: var(--cream);
 }
@@ -304,7 +304,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   font-family: var(--font-body);
   letter-spacing: .35em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: #F5F5F5;
 }
 
 .hero-scroll {
@@ -501,7 +501,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   font-size: .75rem;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: #F5F5F5;
   margin-bottom: 1rem;
 }
 
@@ -576,7 +576,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   font-family: var(--font-head);
   font-size: 1.15rem;
   font-weight: 300;
-  color: var(--gold);
+  color: #F5F5F5;
   margin-bottom: .5rem;
 }
 
@@ -593,7 +593,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   padding: .65rem 1.6rem;
   border: 1px solid var(--gold);
   border-radius: 6px;
-  color: var(--gold);
+  color: #F5F5F5;
   text-decoration: none;
   font-size: .8rem;
   font-family: var(--font-body);
@@ -726,6 +726,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   background: linear-gradient(to top, rgba(11,18,21,.85) 0%, rgba(11,18,21,.35) 60%, transparent 100%);
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   padding: 2.5rem 3rem;
 }
 
@@ -736,6 +737,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   color: var(--cream);
   letter-spacing: .02em;
   margin: 0;
+  text-align: center;
 }
 
 /* ── Service page bullets ─────────────────────────── */
@@ -781,7 +783,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   font-family: var(--font-head);
   font-size: 1.2rem;
   font-weight: 400;
-  color: var(--gold);
+  color: #F5F5F5;
   margin: 0 0 .5rem;
 }
 
@@ -801,8 +803,39 @@ h1, h2, h3 { font-family: var(--font-head); }
   font-size: .7rem;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: #F5F5F5;
   pointer-events: none;
+}
+
+/* Submenu trigger */
+.submenu-trigger {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.submenu-trigger::after {
+  content: '▸';
+  font-size: .7rem;
+  opacity: .6;
+  transition: transform .2s ease;
+}
+.submenu-trigger.open::after {
+  transform: rotate(90deg);
+}
+
+/* Submenu panel */
+.submenu {
+  display: none;
+  background: rgba(255,255,255,.04);
+  border-top: 1px solid rgba(201,169,110,.1);
+  border-bottom: 1px solid rgba(201,169,110,.1);
+}
+.submenu.open { display: block; }
+.submenu a {
+  padding-left: 2rem;
+  font-size: .82rem;
+  opacity: .85;
 }
 
 /* ── Footer ───────────────────────────────────────── */

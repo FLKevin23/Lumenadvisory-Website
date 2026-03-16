@@ -13,7 +13,7 @@ export const de = {
   },
 
   hero: {
-    titleBanner: 'Von Familienvermögen bis zu digitalen Assets. Ein Treuhänder',
+    titleBanner: 'Von Familienvermögen bis zu digitalen Assets. Ein Treuhänder.',
     subheadline: 'Boutique-Treuhanddienstleistungen für anspruchsvolle Kunden',
     value: 'Wir verbinden traditionelle Werte mit moderner Ausführung'
   },
