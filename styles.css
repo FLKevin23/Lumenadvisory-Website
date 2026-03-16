@@ -178,24 +178,19 @@ h1, h2, h3 { font-family: var(--font-head); }
 .btn-login {
   display: inline-flex;
   align-items: center;
-  gap: .4rem;
+  justify-content: center;
   background: var(--accent);
-  color: #fff;
   text-decoration: none;
-  font-size: .75rem;
-  font-family: var(--font-body);
-  font-weight: 600;
-  letter-spacing: .05em;
-  padding: .4rem 1rem;
+  padding: .45rem .55rem;
   border-radius: 6px;
   border: none;
   cursor: pointer;
   transition: opacity .2s;
 }
 .btn-login-icon {
-  height: 14px;
-  width: 14px;
-  flex-shrink: 0;
+  height: 16px;
+  width: 16px;
+  display: block;
 }
 .btn-login:hover { opacity: .85; }
 
