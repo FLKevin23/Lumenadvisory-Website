@@ -35,21 +35,21 @@
       <div class="nav-menu">
         <button class="nav-toggle" id="navToggle" aria-expanded="false">Menu ▾</button>
         <div class="dropdown" id="dropdown">
-          <a href="index.html#who-we-are" data-translate="header.whoWeAre">Who We Are</a>
-          <a href="index.html#what-we-do" data-translate="header.whatWeDo">What We Do</a>
-          <a href="index.html#our-partners" data-translate="header.partners">Our Partners</a>
+          <a href="index.html#who-we-are" data-translate="aboutUs.title">About</a>
+          <a class="submenu-trigger" id="practiceAreasToggle" data-translate="practiceAreas.title">Practice Areas</a>
+          <div class="submenu" id="practiceAreasSubmenu">
+            <a href="family-office.html" data-translate="practiceAreas.familyOffice">Family Office</a>
+            <a href="succession-planning.html" data-translate="practiceAreas.successionPlanning">Succession Planning</a>
+            <a href="relocation.html" data-translate="practiceAreas.relocationServices">Relocation Services</a>
+            <a href="philanthropy.html" data-translate="practiceAreas.philanthropy">Philanthropy</a>
+            <a href="accounting.html" data-translate="practiceAreas.accounting">Accounting</a>
+            <a href="legal-notarial.html" data-translate="practiceAreas.legalAdvice">Legal &amp; Notarial Services</a>
+          </div>
+          <a href="index.html#our-partners" data-translate="partners.title">Our Partners</a>
           <a href="index.html#faq" data-translate="faq.title">FAQ</a>
-          <a href="index.html#contact" data-translate="header.contact">Contact</a>
+          <a href="index.html#contact" data-translate="contact.title">Contact &amp; Offices</a>
           <div class="dropdown-divider"></div>
           <a href="page2.html#section-2" data-translate="header.insights">Insights</a>
-          <div class="dropdown-divider"></div>
-          <span class="dropdown-label">Services</span>
-          <a href="family-office.html" data-translate="practiceAreas.familyOffice">Family Office</a>
-          <a href="succession-planning.html" data-translate="practiceAreas.successionPlanning">Succession Planning</a>
-          <a href="relocation.html" data-translate="practiceAreas.relocationServices">Relocation Services</a>
-          <a href="philanthropy.html" data-translate="practiceAreas.philanthropy">Philanthropy</a>
-          <a href="accounting.html" data-translate="practiceAreas.accounting">Accounting</a>
-          <a href="legal-notarial.html" data-translate="practiceAreas.legalAdvice">Legal &amp; Notarial Services</a>
         </div>
       </div>
       <a href="login.html" class="btn-login" aria-label="Client Login">
@@ -98,16 +98,31 @@
       <h2 class="reveal" data-translate="faq.title">FAQ</h2>
       <div class="faq-list reveal">
         <div class="faq-item">
-          <h3 data-translate="relocationPage.faq1q">Does relocation affect my existing Liechtenstein foundation?</h3>
-          <p data-translate="relocationPage.faq1a">It can. Changing your residence can affect how your home country — and your destination country — views and taxes distributions from a Liechtenstein foundation. We review the structural implications before the move and adjust the governance documentation where necessary.</p>
+          <div class="faq-question">
+            <h3 data-translate="relocationPage.faq1q">Does relocation affect my existing Liechtenstein foundation?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-translate="relocationPage.faq1a">It can. Changing your residence can affect how your home country — and your destination country — views and taxes distributions from a Liechtenstein foundation. We review the structural implications before the move and adjust the governance documentation where necessary.</p>
+          </div>
         </div>
         <div class="faq-item">
-          <h3 data-translate="relocationPage.faq2q">What are the tax implications of moving to Liechtenstein?</h3>
-          <p data-translate="relocationPage.faq2a">Liechtenstein has a favourable and stable tax environment. Residency can be structured in ways that are tax-efficient for international clients, particularly those with existing Liechtenstein trust or foundation structures. Each situation depends on the source of income, existing structures, and applicable double-tax treaties.</p>
+          <div class="faq-question">
+            <h3 data-translate="relocationPage.faq2q">What are the tax implications of moving to Liechtenstein?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-translate="relocationPage.faq2a">Liechtenstein has a favourable and stable tax environment. Residency can be structured in ways that are tax-efficient for international clients, particularly those with existing Liechtenstein trust or foundation structures. Each situation depends on the source of income, existing structures, and applicable double-tax treaties.</p>
+          </div>
         </div>
         <div class="faq-item">
-          <h3 data-translate="relocationPage.faq3q">How early should I plan a relocation?</h3>
-          <p data-translate="relocationPage.faq3a">Ideally six to twelve months before the intended move date. Structural adjustments, legal documentation, and tax analysis take time to do properly. Last-minute relocations often lead to avoidable tax events or compliance gaps that are difficult to correct retroactively.</p>
+          <div class="faq-question">
+            <h3 data-translate="relocationPage.faq3q">How early should I plan a relocation?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-translate="relocationPage.faq3a">Ideally six to twelve months before the intended move date. Structural adjustments, legal documentation, and tax analysis take time to do properly. Last-minute relocations often lead to avoidable tax events or compliance gaps that are difficult to correct retroactively.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -117,6 +132,8 @@
       <h2 class="reveal" data-translate="relocationPage.ctaTitle">Speak with our team</h2>
       <p class="reveal" data-translate="relocationPage.ctaDesc">If you are planning a move across borders and want to ensure your structures are ready, we can help you prepare.</p>
       <a href="index.html#contact" class="btn-outline reveal" data-translate="relocationPage.ctaButton">Get in Touch</a>
+      <br>
+      <a href="index.html#what-we-do" class="btn-back reveal" data-translate="header.backToPracticeAreas">Practice Areas</a>
     </section>
 
   </main>
@@ -156,12 +173,24 @@
       toggle.classList.remove('open');
     });
 
+    const practiceToggle  = document.getElementById('practiceAreasToggle');
+    const practiceSubmenu = document.getElementById('practiceAreasSubmenu');
+
+    practiceToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      practiceToggle.classList.toggle('open');
+      practiceSubmenu.classList.toggle('open');
+    });
+
     document.addEventListener('click', () => {
       dropdown.classList.remove('open');
       toggle.classList.remove('open');
       toggle.setAttribute('aria-expanded', false);
       langDropdown.classList.remove('open');
       langToggle.classList.remove('open');
+      practiceToggle.classList.remove('open');
+      practiceSubmenu.classList.remove('open');
     });
 
     const revealObserver = new IntersectionObserver(

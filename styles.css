@@ -204,7 +204,13 @@ h1, h2, h3 { font-family: var(--font-head); }
 }
 .btn-login:hover { opacity: .85; }
 
-/* ── Sections — base ──────────────────────────────── */
+/* ── Sections — base ──────────────────────────────────
+   Default alignment: centered.
+   Used for hero, practice areas, FAQ, and CTA sections.
+   Detail sections (about, partners, contact) override
+   text-align to left via their own layout containers —
+   see "Detail-section alignment overrides" below.
+   ─────────────────────────────────────────────────── */
 .section {
   min-height: 88vh;
   display: flex;
@@ -329,6 +335,12 @@ h1, h2, h3 { font-family: var(--font-head); }
   50%      { opacity: .25; transform: scaleY(.5) translateY(8px); }
 }
 
+/* ── Detail-section alignment overrides ───────────────
+   About, Partners, and Contact contain structured or
+   reading-heavy content and override the default centered
+   alignment to left-align via their layout containers.
+   ─────────────────────────────────────────────────── */
+
 /* ── About layout ─────────────────────────────────── */
 .section--2 > h2 { margin-bottom: 2.5rem; }
 
@@ -357,7 +369,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   display: block;
 }
 
-.about-body { margin-top: .75rem; text-align: left; }
+.about-body { margin-top: .75rem; text-align: left; } /* detail content — left-align override */
 
 .about-body p {
   font-size: 1rem;
@@ -483,7 +495,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   width: 240px; height: 240px;
   object-fit: cover;
   object-position: top center;
-  border-radius: 50%;
+  border-radius: 10px;
   display: block;
   margin-bottom: 1.5rem;
   border: 1px solid rgba(201,169,110,.25);
@@ -586,22 +598,46 @@ h1, h2, h3 { font-family: var(--font-head); }
   color: var(--text);
 }
 
-/* ── Outline button (whitepaper) ──────────────────── */
+/* ── Outline button (CTA / whitepaper) ────────────── */
 .btn-outline {
   display: inline-block;
   margin-top: 2rem;
   padding: .65rem 1.6rem;
-  border: 1px solid var(--gold);
+  background: var(--accent);
+  border: none;
   border-radius: 6px;
-  color: #F5F5F5;
+  color: #fff;
   text-decoration: none;
   font-size: .8rem;
   font-family: var(--font-body);
   font-weight: 600;
   letter-spacing: .05em;
-  transition: background .2s, color .2s;
+  cursor: pointer;
+  transition: opacity .2s;
 }
-.btn-outline:hover { background: var(--gold); color: var(--dark); }
+.btn-outline:hover { opacity: .85; }
+
+/* ── Back-to-practice-areas link (service pages) ─── */
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  margin-top: 1.75rem;
+  font-family: var(--font-body);
+  font-size: .75rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(245,245,245,.45);
+  text-decoration: none;
+  transition: color .2s;
+}
+.btn-back::before {
+  content: '←';
+  display: inline-block;
+  transition: transform .25s;
+}
+.btn-back:hover { color: #F5F5F5; }
+.btn-back:hover::before { transform: translateX(-5px); }
 
 /* ── Partner detail (page2) ───────────────────────── */
 .partners-detail {
@@ -623,7 +659,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   width: 260px; height: 260px;
   object-fit: cover;
   object-position: top center;
-  border-radius: 50%;
+  border-radius: 10px;
   border: 1px solid rgba(201,169,110,.25);
 }
 
@@ -709,9 +745,15 @@ h1, h2, h3 { font-family: var(--font-head); }
 .service-hero {
   position: relative;
   width: 100%;
-  height: 420px;
+  height: clamp(200px, 42vh, 420px); /* viewport-relative so text always shows below */
   overflow: hidden;
   margin-top: var(--nav-h);
+}
+
+/* Intro section directly below hero — compact so text is visible without scrolling */
+.service-hero + .section {
+  padding-top: 3rem;
+  min-height: auto;
 }
 
 .service-hero img {
@@ -737,7 +779,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   color: var(--cream);
   letter-spacing: .02em;
   margin: 0;
-  text-align: center;
+  text-align: center; /* explicit — hero title always centered on service pages */
 }
 
 /* ── Service page bullets ─────────────────────────── */
@@ -776,19 +818,70 @@ h1, h2, h3 { font-family: var(--font-head); }
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 0;
 }
 
-.faq-item h3 {
+.faq-item {
+  border-bottom: 1px solid rgba(245,245,245,.12);
+}
+.faq-item:first-child {
+  border-top: 1px solid rgba(245,245,245,.12);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq-question h3 {
   font-family: var(--font-head);
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 400;
   color: #F5F5F5;
-  margin: 0 0 .5rem;
+  margin: 0;
+  flex: 1;
 }
 
-.faq-item p {
+.faq-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgba(245,245,245,.35);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .9rem;
+  color: var(--gold);
+  transition: background .2s, border-color .2s, transform .3s;
+  line-height: 1;
+}
+
+.faq-item.open .faq-icon {
+  border-color: var(--gold);
+  background: var(--gold);
+  color: #1a1a1a;
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s ease, padding .35s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 600px;
+}
+
+.faq-answer p {
   margin: 0;
+  padding-bottom: 1.25rem;
   color: var(--cream);
   font-size: .95rem;
   line-height: 1.7;
@@ -876,7 +969,7 @@ h1, h2, h3 { font-family: var(--font-head); }
 
 /* ── Responsive ───────────────────────────────────── */
 @media (max-width: 768px) {
-  .service-hero { height: 280px; }
+  .service-hero { height: clamp(160px, 35vh, 280px); }
   .service-hero-overlay { padding: 1.5rem; }
   .service-bullets { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }

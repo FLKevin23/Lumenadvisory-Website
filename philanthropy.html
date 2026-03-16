@@ -35,21 +35,21 @@
       <div class="nav-menu">
         <button class="nav-toggle" id="navToggle" aria-expanded="false">Menu ▾</button>
         <div class="dropdown" id="dropdown">
-          <a href="index.html#who-we-are" data-translate="header.whoWeAre">Who We Are</a>
-          <a href="index.html#what-we-do" data-translate="header.whatWeDo">What We Do</a>
-          <a href="index.html#our-partners" data-translate="header.partners">Our Partners</a>
+          <a href="index.html#who-we-are" data-translate="aboutUs.title">About</a>
+          <a class="submenu-trigger" id="practiceAreasToggle" data-translate="practiceAreas.title">Practice Areas</a>
+          <div class="submenu" id="practiceAreasSubmenu">
+            <a href="family-office.html" data-translate="practiceAreas.familyOffice">Family Office</a>
+            <a href="succession-planning.html" data-translate="practiceAreas.successionPlanning">Succession Planning</a>
+            <a href="relocation.html" data-translate="practiceAreas.relocationServices">Relocation Services</a>
+            <a href="philanthropy.html" data-translate="practiceAreas.philanthropy">Philanthropy</a>
+            <a href="accounting.html" data-translate="practiceAreas.accounting">Accounting</a>
+            <a href="legal-notarial.html" data-translate="practiceAreas.legalAdvice">Legal &amp; Notarial Services</a>
+          </div>
+          <a href="index.html#our-partners" data-translate="partners.title">Our Partners</a>
           <a href="index.html#faq" data-translate="faq.title">FAQ</a>
-          <a href="index.html#contact" data-translate="header.contact">Contact</a>
+          <a href="index.html#contact" data-translate="contact.title">Contact &amp; Offices</a>
           <div class="dropdown-divider"></div>
           <a href="page2.html#section-2" data-translate="header.insights">Insights</a>
-          <div class="dropdown-divider"></div>
-          <span class="dropdown-label">Services</span>
-          <a href="family-office.html" data-translate="practiceAreas.familyOffice">Family Office</a>
-          <a href="succession-planning.html" data-translate="practiceAreas.successionPlanning">Succession Planning</a>
-          <a href="relocation.html" data-translate="practiceAreas.relocationServices">Relocation Services</a>
-          <a href="philanthropy.html" data-translate="practiceAreas.philanthropy">Philanthropy</a>
-          <a href="accounting.html" data-translate="practiceAreas.accounting">Accounting</a>
-          <a href="legal-notarial.html" data-translate="practiceAreas.legalAdvice">Legal &amp; Notarial Services</a>
         </div>
       </div>
       <a href="login.html" class="btn-login" aria-label="Client Login">
@@ -98,16 +98,31 @@
       <h2 class="reveal" data-translate="faq.title">FAQ</h2>
       <div class="faq-list reveal">
         <div class="faq-item">
-          <h3 data-translate="philanthropyPage.faq1q">What is a Liechtenstein charitable foundation?</h3>
-          <p data-translate="philanthropyPage.faq1a">A Liechtenstein charitable foundation is a legally independent entity established to pursue specific public benefit purposes. It is governed by the Liechtenstein Persons and Companies Act (PGR) and can hold a wide range of assets. It is recognised internationally and can operate cross-border grant-making activities.</p>
+          <div class="faq-question">
+            <h3 data-translate="philanthropyPage.faq1q">What is a Liechtenstein charitable foundation?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-translate="philanthropyPage.faq1a">A Liechtenstein charitable foundation is a legally independent entity established to pursue specific public benefit purposes. It is governed by the Liechtenstein Persons and Companies Act (PGR) and can hold a wide range of assets. It is recognised internationally and can operate cross-border grant-making activities.</p>
+          </div>
         </div>
         <div class="faq-item">
-          <h3 data-translate="philanthropyPage.faq2q">Can a foundation accept cryptocurrency donations?</h3>
-          <p data-translate="philanthropyPage.faq2a">Yes. We structure philanthropic vehicles that can accept and hold digital assets, including cryptocurrencies and tokenised instruments, alongside conventional assets. The foundation's statutes and governance documentation are designed to accommodate digital asset inflows and outflows in a legally compliant manner.</p>
+          <div class="faq-question">
+            <h3 data-translate="philanthropyPage.faq2q">Can a foundation accept cryptocurrency donations?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-translate="philanthropyPage.faq2a">Yes. We structure philanthropic vehicles that can accept and hold digital assets, including cryptocurrencies and tokenised instruments, alongside conventional assets. The foundation's statutes and governance documentation are designed to accommodate digital asset inflows and outflows in a legally compliant manner.</p>
+          </div>
         </div>
         <div class="faq-item">
-          <h3 data-translate="philanthropyPage.faq3q">How is a charitable foundation different from a private foundation?</h3>
-          <p data-translate="philanthropyPage.faq3a">A charitable foundation is established for public benefit purposes and its assets are permanently dedicated to those purposes. A private foundation, by contrast, may serve private beneficiaries. The distinction affects tax treatment, governance requirements, and the permanence of the dedication of assets.</p>
+          <div class="faq-question">
+            <h3 data-translate="philanthropyPage.faq3q">How is a charitable foundation different from a private foundation?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-translate="philanthropyPage.faq3a">A charitable foundation is established for public benefit purposes and its assets are permanently dedicated to those purposes. A private foundation, by contrast, may serve private beneficiaries. The distinction affects tax treatment, governance requirements, and the permanence of the dedication of assets.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -117,6 +132,8 @@
       <h2 class="reveal" data-translate="philanthropyPage.ctaTitle">Speak with our team</h2>
       <p class="reveal" data-translate="philanthropyPage.ctaDesc">If you want to give with structure and impact, we can help you build the right vehicle.</p>
       <a href="index.html#contact" class="btn-outline reveal" data-translate="philanthropyPage.ctaButton">Get in Touch</a>
+      <br>
+      <a href="index.html#what-we-do" class="btn-back reveal" data-translate="header.backToPracticeAreas">Practice Areas</a>
     </section>
 
   </main>
@@ -156,12 +173,24 @@
       toggle.classList.remove('open');
     });
 
+    const practiceToggle  = document.getElementById('practiceAreasToggle');
+    const practiceSubmenu = document.getElementById('practiceAreasSubmenu');
+
+    practiceToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      practiceToggle.classList.toggle('open');
+      practiceSubmenu.classList.toggle('open');
+    });
+
     document.addEventListener('click', () => {
       dropdown.classList.remove('open');
       toggle.classList.remove('open');
       toggle.setAttribute('aria-expanded', false);
       langDropdown.classList.remove('open');
       langToggle.classList.remove('open');
+      practiceToggle.classList.remove('open');
+      practiceSubmenu.classList.remove('open');
     });
 
     const revealObserver = new IntersectionObserver(

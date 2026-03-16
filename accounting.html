@@ -35,21 +35,21 @@
       <div class="nav-menu">
         <button class="nav-toggle" id="navToggle" aria-expanded="false">Menu ▾</button>
         <div class="dropdown" id="dropdown">
-          <a href="index.html#who-we-are" data-translate="header.whoWeAre">Who We Are</a>
-          <a href="index.html#what-we-do" data-translate="header.whatWeDo">What We Do</a>
-          <a href="index.html#our-partners" data-translate="header.partners">Our Partners</a>
+          <a href="index.html#who-we-are" data-translate="aboutUs.title">About</a>
+          <a class="submenu-trigger" id="practiceAreasToggle" data-translate="practiceAreas.title">Practice Areas</a>
+          <div class="submenu" id="practiceAreasSubmenu">
+            <a href="family-office.html" data-translate="practiceAreas.familyOffice">Family Office</a>
+            <a href="succession-planning.html" data-translate="practiceAreas.successionPlanning">Succession Planning</a>
+            <a href="relocation.html" data-translate="practiceAreas.relocationServices">Relocation Services</a>
+            <a href="philanthropy.html" data-translate="practiceAreas.philanthropy">Philanthropy</a>
+            <a href="accounting.html" data-translate="practiceAreas.accounting">Accounting</a>
+            <a href="legal-notarial.html" data-translate="practiceAreas.legalAdvice">Legal &amp; Notarial Services</a>
+          </div>
+          <a href="index.html#our-partners" data-translate="partners.title">Our Partners</a>
           <a href="index.html#faq" data-translate="faq.title">FAQ</a>
-          <a href="index.html#contact" data-translate="header.contact">Contact</a>
+          <a href="index.html#contact" data-translate="contact.title">Contact &amp; Offices</a>
           <div class="dropdown-divider"></div>
           <a href="page2.html#section-2" data-translate="header.insights">Insights</a>
-          <div class="dropdown-divider"></div>
-          <span class="dropdown-label">Services</span>
-          <a href="family-office.html" data-translate="practiceAreas.familyOffice">Family Office</a>
-          <a href="succession-planning.html" data-translate="practiceAreas.successionPlanning">Succession Planning</a>
-          <a href="relocation.html" data-translate="practiceAreas.relocationServices">Relocation Services</a>
-          <a href="philanthropy.html" data-translate="practiceAreas.philanthropy">Philanthropy</a>
-          <a href="accounting.html" data-translate="practiceAreas.accounting">Accounting</a>
-          <a href="legal-notarial.html" data-translate="practiceAreas.legalAdvice">Legal &amp; Notarial Services</a>
         </div>
       </div>
       <a href="login.html" class="btn-login" aria-label="Client Login">
@@ -98,16 +98,31 @@
       <h2 class="reveal" data-translate="faq.title">FAQ</h2>
       <div class="faq-list reveal">
         <div class="faq-item">
-          <h3 data-translate="accountingPage.faq1q">What does accounting for a Liechtenstein foundation involve?</h3>
-          <p data-translate="accountingPage.faq1a">Liechtenstein foundations are required to maintain proper accounting records and, depending on their size and activities, may be subject to audit requirements. We prepare annual accounts, manage bookkeeping, and ensure that the foundation's financial records are accurate, compliant, and suitable for trustee oversight.</p>
+          <div class="faq-question">
+            <h3 data-translate="accountingPage.faq1q">What does accounting for a Liechtenstein foundation involve?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-translate="accountingPage.faq1a">Liechtenstein foundations are required to maintain proper accounting records and, depending on their size and activities, may be subject to audit requirements. We prepare annual accounts, manage bookkeeping, and ensure that the foundation's financial records are accurate, compliant, and suitable for trustee oversight.</p>
+          </div>
         </div>
         <div class="faq-item">
-          <h3 data-translate="accountingPage.faq2q">How do you handle reporting for crypto holdings and DeFi positions?</h3>
-          <p data-translate="accountingPage.faq2a">We treat digital asset holdings as part of the consolidated financial picture. This includes recording on-chain transactions, valuing cryptocurrency positions, accounting for DeFi yields and staking rewards, and applying appropriate accounting treatment across jurisdictions. Reporting is tailored to the applicable regulatory and trustee requirements.</p>
+          <div class="faq-question">
+            <h3 data-translate="accountingPage.faq2q">How do you handle reporting for crypto holdings and DeFi positions?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-translate="accountingPage.faq2a">We treat digital asset holdings as part of the consolidated financial picture. This includes recording on-chain transactions, valuing cryptocurrency positions, accounting for DeFi yields and staking rewards, and applying appropriate accounting treatment across jurisdictions. Reporting is tailored to the applicable regulatory and trustee requirements.</p>
+          </div>
         </div>
         <div class="faq-item">
-          <h3 data-translate="accountingPage.faq3q">Do you provide audit support?</h3>
-          <p data-translate="accountingPage.faq3a">Yes. We prepare accounts and supporting documentation to a standard that supports third-party audit. Where audit is required — either by regulation or by client preference — we coordinate with the appointed auditor and provide full documentation of the accounting basis used.</p>
+          <div class="faq-question">
+            <h3 data-translate="accountingPage.faq3q">Do you provide audit support?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-translate="accountingPage.faq3a">Yes. We prepare accounts and supporting documentation to a standard that supports third-party audit. Where audit is required — either by regulation or by client preference — we coordinate with the appointed auditor and provide full documentation of the accounting basis used.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -117,6 +132,8 @@
       <h2 class="reveal" data-translate="accountingPage.ctaTitle">Speak with our team</h2>
       <p class="reveal" data-translate="accountingPage.ctaDesc">If your structures have outgrown basic bookkeeping and you need accurate, cross-border financial reporting, we can help.</p>
       <a href="index.html#contact" class="btn-outline reveal" data-translate="accountingPage.ctaButton">Get in Touch</a>
+      <br>
+      <a href="index.html#what-we-do" class="btn-back reveal" data-translate="header.backToPracticeAreas">Practice Areas</a>
     </section>
 
   </main>
@@ -156,12 +173,24 @@
       toggle.classList.remove('open');
     });
 
+    const practiceToggle  = document.getElementById('practiceAreasToggle');
+    const practiceSubmenu = document.getElementById('practiceAreasSubmenu');
+
+    practiceToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      practiceToggle.classList.toggle('open');
+      practiceSubmenu.classList.toggle('open');
+    });
+
     document.addEventListener('click', () => {
       dropdown.classList.remove('open');
       toggle.classList.remove('open');
       toggle.setAttribute('aria-expanded', false);
       langDropdown.classList.remove('open');
       langToggle.classList.remove('open');
+      practiceToggle.classList.remove('open');
+      practiceSubmenu.classList.remove('open');
     });
 
     const revealObserver = new IntersectionObserver(

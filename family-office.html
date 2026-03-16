@@ -35,21 +35,21 @@
       <div class="nav-menu">
         <button class="nav-toggle" id="navToggle" aria-expanded="false">Menu ▾</button>
         <div class="dropdown" id="dropdown">
-          <a href="index.html#who-we-are" data-translate="header.whoWeAre">Who We Are</a>
-          <a href="index.html#what-we-do" data-translate="header.whatWeDo">What We Do</a>
-          <a href="index.html#our-partners" data-translate="header.partners">Our Partners</a>
+          <a href="index.html#who-we-are" data-translate="aboutUs.title">About</a>
+          <a class="submenu-trigger" id="practiceAreasToggle" data-translate="practiceAreas.title">Practice Areas</a>
+          <div class="submenu" id="practiceAreasSubmenu">
+            <a href="family-office.html" data-translate="practiceAreas.familyOffice">Family Office</a>
+            <a href="succession-planning.html" data-translate="practiceAreas.successionPlanning">Succession Planning</a>
+            <a href="relocation.html" data-translate="practiceAreas.relocationServices">Relocation Services</a>
+            <a href="philanthropy.html" data-translate="practiceAreas.philanthropy">Philanthropy</a>
+            <a href="accounting.html" data-translate="practiceAreas.accounting">Accounting</a>
+            <a href="legal-notarial.html" data-translate="practiceAreas.legalAdvice">Legal &amp; Notarial Services</a>
+          </div>
+          <a href="index.html#our-partners" data-translate="partners.title">Our Partners</a>
           <a href="index.html#faq" data-translate="faq.title">FAQ</a>
-          <a href="index.html#contact" data-translate="header.contact">Contact</a>
+          <a href="index.html#contact" data-translate="contact.title">Contact &amp; Offices</a>
           <div class="dropdown-divider"></div>
           <a href="page2.html#section-2" data-translate="header.insights">Insights</a>
-          <div class="dropdown-divider"></div>
-          <span class="dropdown-label">Services</span>
-          <a href="family-office.html" data-translate="practiceAreas.familyOffice">Family Office</a>
-          <a href="succession-planning.html" data-translate="practiceAreas.successionPlanning">Succession Planning</a>
-          <a href="relocation.html" data-translate="practiceAreas.relocationServices">Relocation Services</a>
-          <a href="philanthropy.html" data-translate="practiceAreas.philanthropy">Philanthropy</a>
-          <a href="accounting.html" data-translate="practiceAreas.accounting">Accounting</a>
-          <a href="legal-notarial.html" data-translate="practiceAreas.legalAdvice">Legal &amp; Notarial Services</a>
         </div>
       </div>
       <a href="login.html" class="btn-login" aria-label="Client Login">
@@ -98,16 +98,31 @@
       <h2 class="reveal" data-translate="faq.title">FAQ</h2>
       <div class="faq-list reveal">
         <div class="faq-item">
-          <h3 data-translate="familyOfficePage.faq1q">What does a Liechtenstein trustee do in a family office structure?</h3>
-          <p data-translate="familyOfficePage.faq1a">A Liechtenstein trustee acts as the legally accountable steward of the structure — holding assets, enforcing governance rules, coordinating advisors, and ensuring continuity. In a family office context, we extend this role to cover reporting, decision documentation, and long-term family governance.</p>
+          <div class="faq-question">
+            <h3 data-translate="familyOfficePage.faq1q">What does a Liechtenstein trustee do in a family office structure?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-translate="familyOfficePage.faq1a">A Liechtenstein trustee acts as the legally accountable steward of the structure — holding assets, enforcing governance rules, coordinating advisors, and ensuring continuity. In a family office context, we extend this role to cover reporting, decision documentation, and long-term family governance.</p>
+          </div>
         </div>
         <div class="faq-item">
-          <h3 data-translate="familyOfficePage.faq2q">Can a family office structure manage both traditional and digital assets?</h3>
-          <p data-translate="familyOfficePage.faq2a">Yes. We work with structures that combine conventional assets — real estate, equity stakes, private equity — with digital assets such as cryptocurrency portfolios, DeFi positions, and tokenised holdings. Unified governance and consolidated reporting is applied across all asset classes.</p>
+          <div class="faq-question">
+            <h3 data-translate="familyOfficePage.faq2q">Can a family office structure manage both traditional and digital assets?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-translate="familyOfficePage.faq2a">Yes. We work with structures that combine conventional assets — real estate, equity stakes, private equity — with digital assets such as cryptocurrency portfolios, DeFi positions, and tokenised holdings. Unified governance and consolidated reporting is applied across all asset classes.</p>
+          </div>
         </div>
         <div class="faq-item">
-          <h3 data-translate="familyOfficePage.faq3q">How do you handle families based in multiple countries?</h3>
-          <p data-translate="familyOfficePage.faq3a">Our team works across Liechtenstein, Austria, and Poland and advises on structures that span multiple jurisdictions. We coordinate with local advisors and ensure that the overarching governance structure remains coherent regardless of where family members live or where assets are held.</p>
+          <div class="faq-question">
+            <h3 data-translate="familyOfficePage.faq3q">How do you handle families based in multiple countries?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-translate="familyOfficePage.faq3a">Our team works across Liechtenstein, Austria, and Poland and advises on structures that span multiple jurisdictions. We coordinate with local advisors and ensure that the overarching governance structure remains coherent regardless of where family members live or where assets are held.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -117,6 +132,8 @@
       <h2 class="reveal" data-translate="familyOfficePage.ctaTitle">Speak with our team</h2>
       <p class="reveal" data-translate="familyOfficePage.ctaDesc">If you are looking for a coordinated approach to complex, cross-border wealth — we would like to hear from you.</p>
       <a href="index.html#contact" class="btn-outline reveal" data-translate="familyOfficePage.ctaButton">Get in Touch</a>
+      <br>
+      <a href="index.html#what-we-do" class="btn-back reveal" data-translate="header.backToPracticeAreas">Practice Areas</a>
     </section>
 
   </main>
@@ -156,12 +173,24 @@
       toggle.classList.remove('open');
     });
 
+    const practiceToggle  = document.getElementById('practiceAreasToggle');
+    const practiceSubmenu = document.getElementById('practiceAreasSubmenu');
+
+    practiceToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      practiceToggle.classList.toggle('open');
+      practiceSubmenu.classList.toggle('open');
+    });
+
     document.addEventListener('click', () => {
       dropdown.classList.remove('open');
       toggle.classList.remove('open');
       toggle.setAttribute('aria-expanded', false);
       langDropdown.classList.remove('open');
       langToggle.classList.remove('open');
+      practiceToggle.classList.remove('open');
+      practiceSubmenu.classList.remove('open');
     });
 
     const revealObserver = new IntersectionObserver(

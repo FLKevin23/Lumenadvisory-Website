@@ -35,21 +35,21 @@
       <div class="nav-menu">
         <button class="nav-toggle" id="navToggle" aria-expanded="false">Menu ▾</button>
         <div class="dropdown" id="dropdown">
-          <a href="index.html#who-we-are" data-translate="header.whoWeAre">Who We Are</a>
-          <a href="index.html#what-we-do" data-translate="header.whatWeDo">What We Do</a>
-          <a href="index.html#our-partners" data-translate="header.partners">Our Partners</a>
+          <a href="index.html#who-we-are" data-translate="aboutUs.title">About</a>
+          <a class="submenu-trigger" id="practiceAreasToggle" data-translate="practiceAreas.title">Practice Areas</a>
+          <div class="submenu" id="practiceAreasSubmenu">
+            <a href="family-office.html" data-translate="practiceAreas.familyOffice">Family Office</a>
+            <a href="succession-planning.html" data-translate="practiceAreas.successionPlanning">Succession Planning</a>
+            <a href="relocation.html" data-translate="practiceAreas.relocationServices">Relocation Services</a>
+            <a href="philanthropy.html" data-translate="practiceAreas.philanthropy">Philanthropy</a>
+            <a href="accounting.html" data-translate="practiceAreas.accounting">Accounting</a>
+            <a href="legal-notarial.html" data-translate="practiceAreas.legalAdvice">Legal &amp; Notarial Services</a>
+          </div>
+          <a href="index.html#our-partners" data-translate="partners.title">Our Partners</a>
           <a href="index.html#faq" data-translate="faq.title">FAQ</a>
-          <a href="index.html#contact" data-translate="header.contact">Contact</a>
+          <a href="index.html#contact" data-translate="contact.title">Contact &amp; Offices</a>
           <div class="dropdown-divider"></div>
           <a href="page2.html#section-2" data-translate="header.insights">Insights</a>
-          <div class="dropdown-divider"></div>
-          <span class="dropdown-label">Services</span>
-          <a href="family-office.html" data-translate="practiceAreas.familyOffice">Family Office</a>
-          <a href="succession-planning.html" data-translate="practiceAreas.successionPlanning">Succession Planning</a>
-          <a href="relocation.html" data-translate="practiceAreas.relocationServices">Relocation Services</a>
-          <a href="philanthropy.html" data-translate="practiceAreas.philanthropy">Philanthropy</a>
-          <a href="accounting.html" data-translate="practiceAreas.accounting">Accounting</a>
-          <a href="legal-notarial.html" data-translate="practiceAreas.legalAdvice">Legal &amp; Notarial Services</a>
         </div>
       </div>
       <a href="login.html" class="btn-login" aria-label="Client Login">
@@ -98,16 +98,31 @@
       <h2 class="reveal" data-translate="faq.title">FAQ</h2>
       <div class="faq-list reveal">
         <div class="faq-item">
-          <h3 data-translate="successionPlanningPage.faq1q">Can a Liechtenstein foundation protect assets from forced heirship rules?</h3>
-          <p data-translate="successionPlanningPage.faq1a">Liechtenstein foundations can provide significant protection against forced heirship claims under foreign law, depending on the applicable jurisdiction and the structure of the foundation. This is a fact-specific analysis and we assess each client's situation individually before recommending a structure.</p>
+          <div class="faq-question">
+            <h3 data-translate="successionPlanningPage.faq1q">Can a Liechtenstein foundation protect assets from forced heirship rules?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-translate="successionPlanningPage.faq1a">Liechtenstein foundations can provide significant protection against forced heirship claims under foreign law, depending on the applicable jurisdiction and the structure of the foundation. This is a fact-specific analysis and we assess each client's situation individually before recommending a structure.</p>
+          </div>
         </div>
         <div class="faq-item">
-          <h3 data-translate="successionPlanningPage.faq2q">What happens to crypto and digital assets when there is no succession plan?</h3>
-          <p data-translate="successionPlanningPage.faq2a">Without proper planning, digital assets can become inaccessible or lost entirely. Private keys may be unknown to heirs, wallet access may be tied to single devices, and legal frameworks for claiming digital assets vary widely. We build succession structures that specifically address key access, custodial arrangements, and wallet governance.</p>
+          <div class="faq-question">
+            <h3 data-translate="successionPlanningPage.faq2q">What happens to crypto and digital assets when there is no succession plan?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-translate="successionPlanningPage.faq2a">Without proper planning, digital assets can become inaccessible or lost entirely. Private keys may be unknown to heirs, wallet access may be tied to single devices, and legal frameworks for claiming digital assets vary widely. We build succession structures that specifically address key access, custodial arrangements, and wallet governance.</p>
+          </div>
         </div>
         <div class="faq-item">
-          <h3 data-translate="successionPlanningPage.faq3q">When is the right time to start succession planning?</h3>
-          <p data-translate="successionPlanningPage.faq3a">Earlier than most people expect. Succession planning is most effective when designed alongside the asset structure itself — not as an afterthought when assets are already scattered. If you have meaningful wealth across more than one country, the time to plan is now.</p>
+          <div class="faq-question">
+            <h3 data-translate="successionPlanningPage.faq3q">When is the right time to start succession planning?</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p data-translate="successionPlanningPage.faq3a">Earlier than most people expect. Succession planning is most effective when designed alongside the asset structure itself — not as an afterthought when assets are already scattered. If you have meaningful wealth across more than one country, the time to plan is now.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -117,6 +132,8 @@
       <h2 class="reveal" data-translate="successionPlanningPage.ctaTitle">Speak with our team</h2>
       <p class="reveal" data-translate="successionPlanningPage.ctaDesc">Succession planning works best when started early. If you want to understand your options, we are ready to have that conversation.</p>
       <a href="index.html#contact" class="btn-outline reveal" data-translate="successionPlanningPage.ctaButton">Get in Touch</a>
+      <br>
+      <a href="index.html#what-we-do" class="btn-back reveal" data-translate="header.backToPracticeAreas">Practice Areas</a>
     </section>
 
   </main>
@@ -156,12 +173,24 @@
       toggle.classList.remove('open');
     });
 
+    const practiceToggle  = document.getElementById('practiceAreasToggle');
+    const practiceSubmenu = document.getElementById('practiceAreasSubmenu');
+
+    practiceToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      practiceToggle.classList.toggle('open');
+      practiceSubmenu.classList.toggle('open');
+    });
+
     document.addEventListener('click', () => {
       dropdown.classList.remove('open');
       toggle.classList.remove('open');
       toggle.setAttribute('aria-expanded', false);
       langDropdown.classList.remove('open');
       langToggle.classList.remove('open');
+      practiceToggle.classList.remove('open');
+      practiceSubmenu.classList.remove('open');
     });
 
     const revealObserver = new IntersectionObserver(
