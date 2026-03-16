@@ -195,7 +195,6 @@ h1, h2, h3 { font-family: var(--font-head); }
 .btn-login-icon {
   height: 14px;
   width: 14px;
-  filter: brightness(0) invert(1);
   flex-shrink: 0;
 }
 .btn-login:hover { opacity: .85; }
