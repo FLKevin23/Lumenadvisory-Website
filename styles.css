@@ -133,19 +133,19 @@ h1, h2, h3 { font-family: var(--font-head); }
 
 .btn-lang {
   cursor: pointer;
-  background: transparent;
-  border: 1px solid rgba(201,169,110,.4);
+  background: var(--accent);
+  border: none;
   border-radius: 6px;
-  padding: .4rem .75rem;
-  font-size: .75rem;
+  padding: .45rem .85rem;
+  font-size: .8rem;
   font-family: var(--font-body);
   font-weight: 600;
-  color: var(--gold);
+  color: #fff;
   letter-spacing: .05em;
-  transition: background .2s, border-color .2s;
+  transition: opacity .2s;
 }
 .btn-lang:hover,
-.btn-lang.open { background: rgba(201,169,110,.1); border-color: var(--gold); }
+.btn-lang.open { opacity: .85; }
 
 .lang-dropdown {
   display: none;
