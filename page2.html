@@ -168,6 +168,8 @@
     const lenis = new Lenis({ lerp: 0.08, smoothWheel: true });
     function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
     requestAnimationFrame(raf);
+    const _navbar = document.querySelector('.navbar');
+    lenis.on('scroll', ({ scroll }) => _navbar.classList.toggle('scrolled', scroll > 80));
   </script>
 
 </body>

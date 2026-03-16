@@ -11,7 +11,8 @@
   --cream:   #F8F2E6;
   --accent:  #E36D33;
   --text:    #ffffff;
-  --nav-h:   60px;
+  --nav-h:       60px;
+  --nav-h-large: 85px;
 }
 
 /* ── Base ─────────────────────────────────────────── */
@@ -32,14 +33,19 @@ h1, h2, h3 { font-family: var(--font-head); }
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
-  height: var(--nav-h);
+  height: var(--nav-h-large);
   background: var(--dark);
   border-bottom: 1px solid #1e2e34;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
   z-index: 1000;
+  transition: height .35s ease, padding .35s ease;
+}
+.navbar.scrolled {
+  height: var(--nav-h);
+  padding: 0 2rem;
 }
 
 /* Logo — left */
@@ -52,10 +58,14 @@ h1, h2, h3 { font-family: var(--font-head); }
 }
 
 .nav-logo {
-  height: 36px;
+  height: 46px;
   width: auto;
   display: block;
   object-fit: contain;
+  transition: height .35s ease;
+}
+.navbar.scrolled .nav-logo {
+  height: 36px;
 }
 
 .nav-logo-text {
