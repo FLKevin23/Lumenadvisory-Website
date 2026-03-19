@@ -143,12 +143,14 @@
           <div class="partner-name" data-translate="partners.remoName">Remo Mairhofer</div>
           <div class="partner-title" data-translate="partners.remoTitle">Attorney at Law (FL) | Substitute Notary</div>
           <div class="partner-bio" data-translate="partners.remoBio">M.A. HSG (Law), M.A. HSG (Banking and Finance)<br>LL.M., CII (Award)</div>
+          <span class="partner-cta" data-translate="partners.viewProfile">View profile →</span>
         </a>
         <a href="page2.html#tomasz-anchor" class="partner-card reveal">
           <img src="assets/images/team/tomasz-klimek.jpg" alt="Dr. Tomasz Klimek" />
           <div class="partner-name" data-translate="partners.tomaszName">Dr. iur. Tomasz Klimek</div>
           <div class="partner-title" data-translate="partners.tomaszTitle">Attorney at Law (FL, A and PL) | Notary Public</div>
           <div class="partner-bio" data-translate="partners.tomaszBio">LL.M.</div>
+          <span class="partner-cta" data-translate="partners.viewProfile">View profile →</span>
         </a>
       </div>
     </section>
@@ -205,46 +207,47 @@
       </div>
     </section>
 
-    <!-- 6 · Contact -->
+    <!-- 6 · Contact & Offices -->
     <section class="section section--6" id="contact">
       <h2 class="reveal" data-translate="contact.title">Contact &amp; Offices</h2>
-      <div class="contact-layout reveal">
+      <div class="offices-grid reveal">
 
-        <div class="contact-form-wrap">
-          <p class="contact-intro" data-translate="contact.getInTouch">Get in Touch</p>
-          <form class="contact-form" onsubmit="return false;">
-            <input type="text"  data-translate="contact.name"    placeholder="Name" />
-            <input type="email" data-translate="contact.email"   placeholder="Email" />
-            <textarea           data-translate="contact.message" placeholder="Message"></textarea>
-            <button type="submit" class="btn-submit" data-translate="contact.sendMessage">Send Message</button>
-          </form>
+        <div class="office-card">
+          <div class="office-photo">
+            <!-- Building photo: Schaan — replace src when available -->
+            <img src="" alt="Office Schaan" class="office-photo-img office-photo--schaan" />
+          </div>
+          <div class="office-city" data-translate="contact.officeSchaan">Office Schaan</div>
+          <div class="office-detail">
+            <span data-translate="contact.schaanAddress1">Im Bretscha 7</span><br>
+            <span data-translate="contact.schaanAddress2">FL-9494 Schaan</span><br>
+            <span data-translate="contact.schaanPhone">Phone +423 340 11 40</span>
+          </div>
         </div>
 
-        <div class="offices-wrap">
-          <p class="contact-intro" data-translate="contact.ourOffices">Our Offices</p>
-          <div class="office-block">
-            <div class="office-city" data-translate="contact.officeSchaan">Office Schaan</div>
-            <div class="office-detail">
-              <span data-translate="contact.schaanAddress1">Im Bretscha 7</span><br>
-              <span data-translate="contact.schaanAddress2">FL-9494 Schaan</span><br>
-              <span data-translate="contact.schaanPhone">Phone +423 340 11 40</span>
-            </div>
+        <div class="office-card">
+          <div class="office-photo">
+            <!-- Building photo: Vienna — replace src when available -->
+            <img src="" alt="Office Vienna" class="office-photo-img office-photo--vienna" />
           </div>
-          <div class="office-block">
-            <div class="office-city" data-translate="contact.officeVienna">Office Vienna</div>
-            <div class="office-detail">
-              <span data-translate="contact.viennaAddress1">Mahlerstraße 13/1B</span><br>
-              <span data-translate="contact.viennaAddress2">A-1010 Vienna</span><br>
-              <span data-translate="contact.viennaPhone">Phone +43 1 904 31 34</span>
-            </div>
+          <div class="office-city" data-translate="contact.officeVienna">Office Vienna</div>
+          <div class="office-detail">
+            <span data-translate="contact.viennaAddress1">Mahlerstraße 13/1B</span><br>
+            <span data-translate="contact.viennaAddress2">A-1010 Vienna</span><br>
+            <span data-translate="contact.viennaPhone">Phone +43 1 904 31 34</span>
           </div>
-          <div class="office-block">
-            <div class="office-city" data-translate="contact.officeKrakow">Office Krakow</div>
-            <div class="office-detail">
-              <span data-translate="contact.krakowAddress1">ul. Kielecka 19</span><br>
-              <span data-translate="contact.krakowAddress2">PL-31-523 Kraków</span><br>
-              <span data-translate="contact.krakowPhone">Phone +43 1 904 31 34</span>
-            </div>
+        </div>
+
+        <div class="office-card">
+          <div class="office-photo">
+            <!-- Building photo: Kraków — replace src when available -->
+            <img src="" alt="Office Kraków" class="office-photo-img office-photo--krakow" />
+          </div>
+          <div class="office-city" data-translate="contact.officeKrakow">Office Krakow</div>
+          <div class="office-detail">
+            <span data-translate="contact.krakowAddress1">ul. Kielecka 19</span><br>
+            <span data-translate="contact.krakowAddress2">PL-31-523 Kraków</span><br>
+            <span data-translate="contact.krakowPhone">Phone +43 1 904 31 34</span>
           </div>
         </div>
 
@@ -255,13 +258,69 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <img src="assets/images/logo/lumen-logo.png" alt="Lumen Advisory" class="nav-logo" onerror="this.style.display='none'">
-      <nav class="footer-nav">
-        <a href="#what-we-do" data-translate="footer.practiceAreas">Practice Areas</a>
-        <a href="#our-partners" data-translate="footer.partners">Partners</a>
-        <a href="#contact" data-translate="footer.contact">Contact</a>
-      </nav>
-      <p class="footer-copy" data-translate="footer.copyright">© 2026 Lumenadvisory. All rights reserved.</p>
+      <div class="footer-top">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <img src="assets/images/logo/lumen-logo.png" alt="Lumen Advisory" class="nav-logo" onerror="this.style.display='none'">
+          <p class="footer-tagline" data-translate="footer.tagline">Independent Trustee Company<br>Liechtenstein</p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-col">
+          <div class="footer-col-title" data-translate="footer.navTitle">Navigation</div>
+          <nav class="footer-nav">
+            <a href="#who-we-are" data-translate="aboutUs.title">About</a>
+            <a href="#what-we-do" data-translate="footer.practiceAreas">Practice Areas</a>
+            <a href="#our-partners" data-translate="footer.partners">Partners</a>
+            <a href="#faq" data-translate="faq.title">FAQ</a>
+            <a href="#contact" data-translate="footer.contact">Contact &amp; Offices</a>
+            <a href="page2.html#section-2" data-translate="header.insights">Insights</a>
+          </nav>
+        </div>
+
+        <!-- Offices -->
+        <div class="footer-col">
+          <div class="footer-col-title" data-translate="footer.officesTitle">Offices</div>
+          <div class="footer-offices">
+            <div class="footer-office">
+              <div class="footer-office-city" data-translate="contact.officeSchaan">Office Schaan</div>
+              <div class="footer-office-addr">Im Bretscha 7<br>FL-9494 Schaan</div>
+            </div>
+            <div class="footer-office">
+              <div class="footer-office-city" data-translate="contact.officeVienna">Office Vienna</div>
+              <div class="footer-office-addr">Mahlerstraße 13/1B<br>A-1010 Vienna</div>
+            </div>
+            <div class="footer-office">
+              <div class="footer-office-city" data-translate="contact.officeKrakow">Office Krakow</div>
+              <div class="footer-office-addr">ul. Kielecka 19<br>PL-31-523 Kraków</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Memberships -->
+        <div class="footer-col">
+          <div class="footer-col-title" data-translate="footer.membershipsTitle">Memberships</div>
+          <div class="footer-memberships">
+            <!-- Save image as: assets/images/portfolio/chamber-of-trustees.png -->
+            <a href="https://www.tvt.li" target="_blank" rel="noopener" class="footer-membership-link">
+              <img src="assets/images/portfolio/chamber-of-trustees.png"
+                   alt="Treuhändervereinigung Liechtenstein"
+                   class="footer-membership-logo"
+                   onerror="this.closest('.footer-membership-link').style.display='none'" />
+            </a>
+            <a href="https://www.treuhandkammer.li" target="_blank" rel="noopener" class="footer-membership-link">
+              <img src="assets/images/portfolio/logo_treuhandkammer-fl.svg"
+                   alt="Treuhandkammer Liechtenstein"
+                   class="footer-membership-logo footer-membership-logo--tkfl" />
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy" data-translate="footer.copyright">© 2026 Lumenadvisory. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 

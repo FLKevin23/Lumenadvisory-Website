@@ -6,8 +6,9 @@ export const de = {
     practiceAreas: 'Tätigkeitsbereiche',
     partners: 'Partner',
     contact: 'Kontakt',
-    insights: 'Einblicke',
+    insights: 'Publikationen',
     clientLogin: 'Kundenportal',
+    backToPracticeAreas: 'Leistungsbereiche',
     languageDeutsch: 'Deutsch',
     languageEnglish: 'English'
   },
@@ -22,9 +23,8 @@ export const de = {
     title: 'Über uns',
     para1: 'Die meisten Menschen suchen nicht von Anfang an nach einem Treuhänder. Sie beginnen mit einer Frage — wie sie schützen, was sie aufgebaut haben, wie sie ein grenzüberschreitendes Leben strukturieren oder wie sie sicherstellen, dass ihr Lebenswerk Bestand hat.',
     para2: 'Für diesen Moment ist Lumen Advisory da.',
-    para3: 'Wir arbeiten mit international ausgerichteten Unternehmern, Gründern und Familien zusammen — oft selbstgemacht, oft in mehreren Rechtsordnungen tätig — die Klarheit brauchen, bevor sie ein Produkt brauchen.',
-    para4: 'Als unabhängiges Treuhandunternehmen mit Sitz in Liechtenstein verbinden wir treuhänderische Expertise mit rechtlicher und notarieller Erfahrung, um Strukturen zu schaffen, die wirklich passen: Vermögensschutz, Nachfolgeplanung, Relocation und langfristige Familienverwaltung.',
-    para5: 'Unser Team bringt internationale Hintergründe und direkte Beteiligung in jedes Mandat ein. Mit Büros in Liechtenstein, Wien und Krakau arbeiten wir dort, wo unsere Kunden leben und wirken — insbesondere in Mittel- und Osteuropa.'
+    para3: 'Wir arbeiten mit international ausgerichteten Unternehmern, Gründern und Familien zusammen, die Klarheit brauchen, bevor sie ein Produkt brauchen. Als unabhängiges Treuhandunternehmen mit Sitz in Liechtenstein verbinden wir treuhänderische Expertise mit rechtlicher und notarieller Erfahrung, um Strukturen zu schaffen, die wirklich passen: Vermögensschutz, Nachfolgeplanung, Relocation und Familienverwaltung.',
+    para4: 'Mit Büros in Liechtenstein, Wien und Krakau arbeiten wir dort, wo unsere Kunden leben — insbesondere in Mittel- und Osteuropa.'
   },
 
   practiceAreas: {
@@ -44,7 +44,16 @@ export const de = {
     remoBio: 'M.A. HSG (Recht), M.A. HSG (Banking and Finance)<br>LL.M., CII (Award)',
     tomaszName: 'Dr. iur. Tomasz Klimek',
     tomaszTitle: 'Öffentlicher Notar | Rechtsanwalt (FL, A & PL) | Partner',
-    tomaszBio: 'LL.M.'
+    tomaszBio: 'LL.M.',
+    viewProfile: 'Profil ansehen →'
+  },
+
+  partnersPage: {
+    heroTitle: 'Unsere Partner',
+    heroTagline: 'Die Menschen hinter Lumen Advisory',
+    linkedinTitle: 'Verbinden Sie sich auf LinkedIn',
+    linkedinDesc: 'Folgen Sie Lumen Advisory für Einblicke in Vermögensschutz, Nachfolgeplanung und liechtensteinisches Recht.',
+    linkedinButton: 'Auf LinkedIn folgen'
   },
 
   contact: {
@@ -73,7 +82,11 @@ export const de = {
     practiceAreas: 'Tätigkeitsbereiche',
     partners: 'Partner',
     contact: 'Kontakt',
-    copyright: '© 2026 Lumenadvisory. Alle Rechte vorbehalten.'
+    copyright: '© 2026 Lumenadvisory. Alle Rechte vorbehalten.',
+    tagline: 'Unabhängiges Treuhandunternehmen\nLiechtenstein',
+    navTitle: 'Navigation',
+    officesTitle: 'Büros',
+    membershipsTitle: 'Mitgliedschaften'
   },
 
   insightsPage: {
@@ -104,8 +117,9 @@ export const de = {
     legalAdviceTitle: 'Rechtsberatung & Notariatsdienste',
     legalAdvicePara1: 'Rechtsberatung und notarielle Dienstleistungen sind vollständig in unsere treuhänderische Arbeit integriert und stellen sicher, dass Strukturen für sowohl konventionelle als auch digitale Assets nicht nur gut konzipiert, sondern auch ordnungsgemäß ausgeführt und gepflegt werden.',
     legalAdvicePara2: 'Dies umfasst zunehmend die rechtliche Strukturierung von Stiftungen oder Gesellschaften, die tokenisierte Assets, NFT-Sammlungen oder Krypto-Portfolios neben traditionellen Immobilien und Beteiligungen halten – mit rechtlich fundierten Rahmenwerken für Verwahrungsarrangements, Smart-Contract-Governance und grenzüberschreitende digitale Asset-Transaktionen.',
-    whitepaperTitle: 'Whitepaper',
-    whitepaperDesc: 'Sanktionen Russland - Ein umfassender Überblick über die aktuellen rechtlichen Rahmenbedingungen und praktischen Implikationen.',
+    publicationsTitle: 'Publikationen',
+    publicationsIntro: 'Wir veröffentlichen regelmäßig Beiträge und Fachartikel zu aktuellen Themen, die unsere Branche bewegen — darunter Vermögensschutz, Erbrecht, grenzüberschreitende Strukturierung sowie regulatorische Entwicklungen in Liechtenstein und darüber hinaus. Alle Publikationen stammen aus der Feder unserer Rechtsanwälte, Treuhänder und Berater.',
+    whitepaperDesc: 'Sanktionen Russland — Ein umfassender Überblick über die aktuellen rechtlichen Rahmenbedingungen und praktischen Implikationen.',
     downloadButton: 'Whitepaper herunterladen (PDF)',
     blogTitle: 'Blog',
     blogDesc: 'Unser Blog bietet Perspektiven zu Vermögen, Vermächtnis und Struktur, die heute wichtig sind und morgen Form geben.',

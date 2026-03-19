@@ -6,8 +6,9 @@ export const en = {
     practiceAreas: 'Practice Areas',
     partners: 'Partners',
     contact: 'Contact',
-    insights: 'Insights',
+    insights: 'Publications',
     clientLogin: 'Client Login',
+    backToPracticeAreas: 'Practice Areas',
     languageDeutsch: 'Deutsch',
     languageEnglish: 'English'
   },
@@ -22,9 +23,8 @@ export const en = {
     title: 'About',
     para1: 'Most people don\'t start by looking for a trustee. They start with a question — how to protect what they\'ve built, how to structure a cross-border life, or how to ensure what they\'ve created outlasts them.',
     para2: 'Lumen Advisory exists for that moment.',
-    para3: 'We partner with internationally minded entrepreneurs, founders and families — often self-made, often operating across multiple jurisdictions — who need clarity before they need a product.',
-    para4: 'As an independent trustee company based in Liechtenstein, we combine fiduciary expertise with legal and notarial experience to build structures that actually fit: asset protection, succession planning, relocation and long-term family governance.',
-    para5: 'Our team brings international backgrounds and direct involvement to every mandate. With offices in Liechtenstein, Vienna and Kraków, we work where our clients live and operate — particularly across Central and Eastern Europe.'
+    para3: 'We partner with internationally minded entrepreneurs, founders and families who need clarity before they need a product. As an independent trustee company based in Liechtenstein, we combine fiduciary and legal expertise to build structures that actually fit: asset protection, succession planning, relocation and family governance.',
+    para4: 'With offices in Liechtenstein, Vienna and Kraków, we work where our clients live — particularly across Central and Eastern Europe.'
   },
 
   practiceAreas: {
@@ -44,7 +44,16 @@ export const en = {
     remoBio: 'M.A. HSG (Law), M.A. HSG (Banking and Finance)<br>LL.M., CII (Award)',
     tomaszName: 'Dr. iur. Tomasz Klimek',
     tomaszTitle: 'Public Notary | Attorney-at-Law (FL, A & PL) | Partner',
-    tomaszBio: 'LL.M.'
+    tomaszBio: 'LL.M.',
+    viewProfile: 'View profile →'
+  },
+
+  partnersPage: {
+    heroTitle: 'Our Partners',
+    heroTagline: 'The people behind Lumen Advisory',
+    linkedinTitle: 'Connect on LinkedIn',
+    linkedinDesc: 'Follow Lumen Advisory for insights on asset protection, succession planning, and Liechtenstein law.',
+    linkedinButton: 'Follow on LinkedIn'
   },
 
   contact: {
@@ -73,7 +82,11 @@ export const en = {
     practiceAreas: 'Practice Areas',
     partners: 'Partners',
     contact: 'Contact',
-    copyright: '© 2026 Lumenadvisory. All rights reserved.'
+    copyright: '© 2026 Lumenadvisory. All rights reserved.',
+    tagline: 'Independent Trustee Company\nLiechtenstein',
+    navTitle: 'Navigation',
+    officesTitle: 'Offices',
+    membershipsTitle: 'Memberships'
   },
 
   insightsPage: {
@@ -104,7 +117,8 @@ export const en = {
     legalAdviceTitle: 'Legal Advice & Notarial Services',
     legalAdvicePara1: 'Legal advice and notarial services are fully integrated into our fiduciary work, ensuring that structures covering both conventional and digital assets are not only well designed but also properly executed and maintained.',
     legalAdvicePara2: 'This increasingly includes the legal structuring of foundations or companies that hold tokenized assets, NFT collections, or crypto portfolios alongside traditional real estate and equity—requiring legally sound frameworks for custody arrangements, smart contract governance, and cross-border digital asset transactions.',
-    whitepaperTitle: 'Whitepaper',
+    publicationsTitle: 'Publications',
+    publicationsIntro: 'We regularly publish articles and specialist papers on current topics that matter in and for our field — covering areas such as asset protection, succession law, cross-border structuring, and regulatory developments in Liechtenstein and beyond. All contributions are written by our team of attorneys, trustees, and advisors.',
     whitepaperDesc: 'Russia Sanctions — A comprehensive overview of the current legal framework and practical implications.',
     downloadButton: 'Download Whitepaper (PDF)',
     blogTitle: 'Blog',

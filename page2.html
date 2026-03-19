@@ -36,21 +36,21 @@
       <div class="nav-menu">
         <button class="nav-toggle" id="navToggle" aria-expanded="false">Menu ▾</button>
         <div class="dropdown" id="dropdown">
-          <a href="index.html#who-we-are" data-translate="header.whoWeAre">Who We Are</a>
-          <a href="index.html#what-we-do" data-translate="header.whatWeDo">What We Do</a>
-          <a href="index.html#our-partners" data-translate="header.partners">Our Partners</a>
+          <a href="index.html#who-we-are" data-translate="aboutUs.title">About</a>
+          <a class="submenu-trigger" id="practiceAreasToggle" data-translate="practiceAreas.title">Practice Areas</a>
+          <div class="submenu" id="practiceAreasSubmenu">
+            <a href="family-office.html" data-translate="practiceAreas.familyOffice">Family Office</a>
+            <a href="succession-planning.html" data-translate="practiceAreas.successionPlanning">Succession Planning</a>
+            <a href="relocation.html" data-translate="practiceAreas.relocationServices">Relocation Services</a>
+            <a href="philanthropy.html" data-translate="practiceAreas.philanthropy">Philanthropy</a>
+            <a href="accounting.html" data-translate="practiceAreas.accounting">Accounting</a>
+            <a href="legal-notarial.html" data-translate="practiceAreas.legalAdvice">Legal &amp; Notarial Services</a>
+          </div>
+          <a href="index.html#our-partners" data-translate="partners.title">Our Partners</a>
           <a href="index.html#faq" data-translate="faq.title">FAQ</a>
-          <a href="index.html#contact" data-translate="header.contact">Contact</a>
+          <a href="index.html#contact" data-translate="contact.title">Contact &amp; Offices</a>
           <div class="dropdown-divider"></div>
           <a href="page2.html#section-2" data-translate="header.insights">Insights</a>
-          <div class="dropdown-divider"></div>
-          <span class="dropdown-label">Services</span>
-          <a href="family-office.html" data-translate="practiceAreas.familyOffice">Family Office</a>
-          <a href="succession-planning.html" data-translate="practiceAreas.successionPlanning">Succession Planning</a>
-          <a href="relocation.html" data-translate="practiceAreas.relocationServices">Relocation Services</a>
-          <a href="philanthropy.html" data-translate="practiceAreas.philanthropy">Philanthropy</a>
-          <a href="accounting.html" data-translate="practiceAreas.accounting">Accounting</a>
-          <a href="legal-notarial.html" data-translate="practiceAreas.legalAdvice">Legal &amp; Notarial Services</a>
         </div>
       </div>
       <a href="login.html" class="btn-login" aria-label="Client Login">
@@ -59,10 +59,16 @@
     </div>
   </nav>
 
+  <!-- ── Page Hero ─────────────────────────────────── -->
+  <div class="page-hero">
+    <h1 data-translate="partnersPage.heroTitle">Our Partners</h1>
+    <p data-translate="partnersPage.heroTagline">The people behind Lumen Advisory</p>
+  </div>
+
   <main>
 
     <!-- 1 · Partner Bios -->
-    <section class="section section--1" id="section-1">
+    <section class="section" id="section-1">
       <div class="partners-detail reveal">
 
         <div class="partner-detail-card" id="partner-remo">
@@ -92,32 +98,84 @@
 
     <!-- 2 · Whitepaper -->
     <section class="section section--2" id="section-2">
-      <h2 class="reveal" data-translate="insightsPage.whitepaperTitle">Whitepaper</h2>
+      <h2 class="reveal" data-translate="insightsPage.publicationsTitle">Publications</h2>
+      <p class="reveal" data-translate="insightsPage.publicationsIntro">We regularly publish articles and specialist papers on current topics that matter in and for our field — covering areas such as asset protection, succession law, cross-border structuring, and regulatory developments in Liechtenstein and beyond. All contributions are written by our team of attorneys, trustees, and advisors.</p>
       <p class="reveal" data-translate="insightsPage.whitepaperDesc">Sanktionen Russland — Ein umfassender Überblick über die aktuellen rechtlichen Rahmenbedingungen und praktischen Implikationen.</p>
       <a href="assets/whitepaper.pdf" target="_blank" class="btn-outline reveal" data-translate="insightsPage.downloadButton">Download Whitepaper (PDF)</a>
     </section>
 
-    <!-- 3 · Newsletter -->
-    <section class="section section--3" id="section-3">
-      <h2 class="reveal" data-translate="insightsPage.blogTitle">Blog</h2>
-      <p class="reveal" data-translate="insightsPage.newsletterTagline">A monthly note on what quietly changes—and why it matters.</p>
-      <form class="newsletter-form reveal" onsubmit="return false;">
-        <input type="email" data-translate="insightsPage.newsletterPlaceholder" placeholder="Enter your email" />
-        <button type="submit" class="btn-login" data-translate="insightsPage.newsletterButton">Newsletter</button>
-      </form>
+    <!-- 3 · LinkedIn Social Wall — hidden until company page is live -->
+    <section class="section section--3" id="linkedin" style="display:none">
+      <h2 class="reveal" data-translate="partnersPage.linkedinTitle">Connect on LinkedIn</h2>
+      <p class="linkedin-intro reveal" data-translate="partnersPage.linkedinDesc">Follow Lumen Advisory for insights on asset protection, succession planning, and Liechtenstein law.</p>
+      <!-- LinkedIn wall — drop embed / widget script here when ready -->
+      <div class="linkedin-wall reveal">
+        <div class="linkedin-placeholder"></div>
+      </div>
+      <a href="#" class="btn-linkedin reveal" data-translate="partnersPage.linkedinButton">Follow on LinkedIn</a>
     </section>
 
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <img src="assets/images/logo/lumen-logo.png" alt="Lumen Advisory" class="nav-logo" onerror="this.style.display='none'">
-      <nav class="footer-nav">
-        <a href="index.html#what-we-do" data-translate="footer.practiceAreas">Practice Areas</a>
-        <a href="index.html#our-partners" data-translate="footer.partners">Partners</a>
-        <a href="index.html#contact" data-translate="footer.contact">Contact</a>
-      </nav>
-      <p class="footer-copy" data-translate="footer.copyright">© 2026 Lumenadvisory. All rights reserved.</p>
+      <div class="footer-top">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <img src="assets/images/logo/lumen-logo.png" alt="Lumen Advisory" class="nav-logo" onerror="this.style.display='none'">
+          <p class="footer-tagline" data-translate="footer.tagline">Independent Trustee Company<br>Liechtenstein</p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-col">
+          <div class="footer-col-title" data-translate="footer.navTitle">Navigation</div>
+          <nav class="footer-nav">
+            <a href="index.html#who-we-are" data-translate="aboutUs.title">About</a>
+            <a href="index.html#what-we-do" data-translate="footer.practiceAreas">Practice Areas</a>
+            <a href="index.html#our-partners" data-translate="footer.partners">Partners</a>
+            <a href="index.html#faq" data-translate="faq.title">FAQ</a>
+            <a href="index.html#contact" data-translate="footer.contact">Contact &amp; Offices</a>
+            <a href="page2.html#section-2" data-translate="header.insights">Insights</a>
+          </nav>
+        </div>
+
+        <!-- Offices -->
+        <div class="footer-col">
+          <div class="footer-col-title" data-translate="footer.officesTitle">Offices</div>
+          <div class="footer-offices">
+            <div class="footer-office">
+              <div class="footer-office-city" data-translate="contact.officeSchaan">Office Schaan</div>
+              <div class="footer-office-addr">Im Bretscha 7<br>FL-9494 Schaan</div>
+            </div>
+            <div class="footer-office">
+              <div class="footer-office-city" data-translate="contact.officeVienna">Office Vienna</div>
+              <div class="footer-office-addr">Mahlerstraße 13/1B<br>A-1010 Vienna</div>
+            </div>
+            <div class="footer-office">
+              <div class="footer-office-city" data-translate="contact.officeKrakow">Office Krakow</div>
+              <div class="footer-office-addr">ul. Kielecka 19<br>PL-31-523 Kraków</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Memberships -->
+        <div class="footer-col">
+          <div class="footer-col-title" data-translate="footer.membershipsTitle">Memberships</div>
+          <div class="footer-memberships">
+            <a href="https://www.tvt.li" target="_blank" rel="noopener" class="footer-membership-link">
+              <img src="assets/images/portfolio/chamber-of-trustees.png"
+                   alt="Treuhändervereinigung Liechtenstein"
+                   class="footer-membership-logo"
+                   onerror="this.closest('.footer-membership-link').style.display='none'" />
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy" data-translate="footer.copyright">© 2026 Lumenadvisory. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
@@ -144,12 +202,24 @@
       toggle.classList.remove('open');
     });
 
+    const practiceToggle  = document.getElementById('practiceAreasToggle');
+    const practiceSubmenu = document.getElementById('practiceAreasSubmenu');
+
+    practiceToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      practiceToggle.classList.toggle('open');
+      practiceSubmenu.classList.toggle('open');
+    });
+
     document.addEventListener('click', () => {
       dropdown.classList.remove('open');
       toggle.classList.remove('open');
       toggle.setAttribute('aria-expanded', false);
       langDropdown.classList.remove('open');
       langToggle.classList.remove('open');
+      practiceToggle.classList.remove('open');
+      practiceSubmenu.classList.remove('open');
     });
 
     const revealObserver = new IntersectionObserver(
