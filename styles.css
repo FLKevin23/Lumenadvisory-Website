@@ -344,6 +344,79 @@ h1, h2, h3 { font-family: var(--font-head); }
 /* ── About layout ─────────────────────────────────── */
 .section--2 > h2 { margin-bottom: 2.5rem; }
 
+/* What We Do section — top-aligned */
+.section--3 {
+  justify-content: flex-start;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+}
+
+.section--3 > h2 { margin-bottom: 5rem; }
+
+/* Publications section — top-aligned */
+.section--2 {
+  justify-content: flex-start;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+}
+
+.section--2 .pub-intro {
+  max-width: 760px;
+}
+
+/* ── Publications grid ────────────────────────────── */
+.pub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 384px));
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.pub-card {
+  width: 384px;
+  min-height: 384px;
+  background: var(--surface);
+  border: 1px solid rgba(201,169,110,.18);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 4px 24px rgba(0,0,0,.35);
+  transition: box-shadow .25s ease, border-color .25s ease;
+}
+
+.pub-card:hover {
+  border-color: rgba(201,169,110,.38);
+  box-shadow: 0 8px 36px rgba(0,0,0,.5);
+}
+
+.pub-card__title {
+  font-family: var(--font-head);
+  font-size: 1.55rem;
+  font-weight: 300;
+  color: var(--cream);
+  letter-spacing: -.01em;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.pub-card__desc {
+  flex: 1 1 auto;
+  font-size: .9rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.pub-card .btn-outline {
+  margin-top: 0;
+  align-self: flex-start;
+}
+
 .about-layout {
   display: flex;
   align-items: center;
@@ -616,6 +689,68 @@ h1, h2, h3 { font-family: var(--font-head); }
 .btn-back:hover { color: #F5F5F5; }
 .btn-back:hover::before { transform: translateX(-5px); }
 
+/* ── CTA section layout ───────────────────────────── */
+
+.cta-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 6rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.cta-left {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.cta-rule {
+  width: 48px;
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.4);
+  margin: 1.5rem 0;
+}
+
+.cta-right {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 0.5rem;
+}
+
+.cta-office-city {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
+
+.cta-office-phone {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.cta-office-phone:hover { color: var(--cream); }
+
+.office-email {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.office-email:hover { color: var(--cream); }
+
 /* ── Partner detail (page2) ───────────────────────── */
 .partners-detail {
   display: flex;
@@ -820,11 +955,11 @@ h1, h2, h3 { font-family: var(--font-head); }
 .service-bullets {
   list-style: none;
   padding: 0;
-  margin: 1.5rem 0 0;
+  margin: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem 2.5rem;
-  max-width: 860px;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 680px;
 }
 
 .service-bullets li {
@@ -844,6 +979,44 @@ h1, h2, h3 { font-family: var(--font-head); }
   border-radius: 50%;
   background: var(--gold);
 }
+
+/* ── Who This Is For — archetype cards ───────────── */
+.who-for-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 960px;
+  margin-top: 3rem;
+}
+
+.who-for-card {
+  border: 1px solid rgba(201,169,110,0.15);
+  border-top: 3px solid var(--gold);
+  border-radius: 8px;
+  padding: 2rem 1.75rem;
+  background: rgba(255,255,255,0.04);
+}
+
+.who-for-card-label {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.85rem;
+}
+
+.who-for-card-text {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.75);
+  margin: 0;
+}
+
+.who-for-card:nth-child(2) { transition-delay: 0.15s; }
+.who-for-card:nth-child(3) { transition-delay: 0.3s; }
 
 /* ── Service page FAQ ─────────────────────────────── */
 .faq-list {
@@ -1073,11 +1246,16 @@ h1, h2, h3 { font-family: var(--font-head); }
   .service-hero { height: clamp(160px, 35vh, 280px); }
   .service-hero-overlay { padding: 1.5rem; }
   .service-bullets { grid-template-columns: 1fr; }
+  .who-for-grid { grid-template-columns: 1fr; }
+  .cta-layout { flex-direction: column; gap: 3rem; }
+  .cta-right { flex-direction: row; flex-wrap: wrap; gap: 2rem 3rem; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .partners-grid { grid-template-columns: 1fr; gap: 3rem; }
   .offices-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .partner-detail-card { grid-template-columns: 1fr; }
   .services-detail-grid { grid-template-columns: 1fr; }
+  .pub-grid { grid-template-columns: 1fr; max-width: 480px; }
+  .pub-card { width: 100%; min-height: auto; }
 .section { padding: 5rem 2rem; }
 }
 
