@@ -992,7 +992,7 @@ h1, h2, h3 { font-family: var(--font-head); }
 
 .who-for-card {
   border: 1px solid rgba(201,169,110,0.15);
-  border-top: 3px solid var(--gold);
+  border-top: 3px solid rgba(255,255,255,0.5);
   border-radius: 8px;
   padding: 2rem 1.75rem;
   background: rgba(255,255,255,0.04);
