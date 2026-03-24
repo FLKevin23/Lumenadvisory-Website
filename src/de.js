@@ -67,7 +67,7 @@ export const de = {
     officeSchaan: 'Büro Schaan',
     schaanAddress1: 'Im Bretscha 7',
     schaanAddress2: 'FL-9494 Schaan',
-    schaanCountry: 'Liechtenstein',
+    schaanCountry: 'Fürstentum Liechtenstein',
     schaanPhone: 'Telefon +423 340 11 40',
     officeVienna: 'Büro Wien',
     viennaAddress1: 'Mahlerstraße 13/1B',
