@@ -1143,7 +1143,7 @@ h1, h2, h3 { font-family: var(--font-head); }
 .site-footer {
   background: var(--dark);
   border-top: 1px solid rgba(201,169,110,.18);
-  padding: 4rem 3rem 2rem;
+  padding: 3rem 3rem 2rem;
 }
 .footer-inner {
   max-width: 1100px;
@@ -1151,15 +1151,23 @@ h1, h2, h3 { font-family: var(--font-head); }
 }
 .footer-top {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1.4fr 1fr;
+  grid-template-columns: auto 1fr auto;
   gap: 3rem;
-  margin-bottom: 3rem;
+  align-items: start;
+  margin-bottom: 2rem;
 }
 .footer-brand {
   display: flex;
   flex-direction: column;
   gap: .85rem;
 }
+.footer-brand-link {
+  display: flex;
+  flex-direction: column;
+  gap: .85rem;
+  text-decoration: none;
+}
+.footer-brand-link:hover .nav-logo { opacity: .75; }
 .footer-tagline {
   font-size: .78rem;
   color: var(--text);
@@ -1176,24 +1184,10 @@ h1, h2, h3 { font-family: var(--font-head); }
   text-transform: uppercase;
   margin-bottom: 1.1rem;
 }
-.footer-nav {
-  display: flex;
-  flex-direction: column;
-  gap: .55rem;
-}
-.footer-nav a {
-  color: var(--cream);
-  text-decoration: none;
-  font-size: .82rem;
-  letter-spacing: .03em;
-  opacity: .6;
-  transition: opacity .2s;
-}
-.footer-nav a:hover { opacity: 1; }
 .footer-offices {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .75rem 2rem;
 }
 .footer-office-city {
   font-size: .72rem;
@@ -1288,9 +1282,10 @@ h1, h2, h3 { font-family: var(--font-head); }
   .pub-grid { grid-template-columns: 1fr; max-width: 480px; }
   .pub-card { width: 100%; min-height: auto; }
 
-  /* Footer — 2-column on tablet */
+  /* Footer — brand + memberships side by side, offices full-width below */
   .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
-  .site-footer { padding: 3rem 1.5rem 2rem; }
+  .footer-offices { grid-template-columns: 1fr; gap: 1rem; }
+  .site-footer { padding: 2.5rem 1.5rem 2rem; }
 }
 
 @media (max-width: 480px) {
@@ -1307,7 +1302,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   .partner-card img { width: 140px; height: 140px; }
 
   /* Footer — single column on phone */
-  .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-top { grid-template-columns: 1fr; gap: 1.5rem; }
 
   /* Navbar actions spacing */
   .nav-actions { gap: .35rem; }
