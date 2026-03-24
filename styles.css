@@ -1153,7 +1153,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 3rem;
-  align-items: start;
+  align-items: center;
   margin-bottom: 2rem;
 }
 .footer-brand {
