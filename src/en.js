@@ -67,14 +67,17 @@ export const en = {
     officeSchaan: 'Office Schaan',
     schaanAddress1: 'Im Bretscha 7',
     schaanAddress2: 'FL-9494 Schaan',
+    schaanCountry: 'Liechtenstein',
     schaanPhone: 'Phone +423 340 11 40',
     officeVienna: 'Office Vienna',
     viennaAddress1: 'Mahlerstraße 13/1B',
     viennaAddress2: 'A-1010 Vienna',
+    viennaCountry: 'Austria',
     viennaPhone: 'Phone +43 1 904 31 34',
     officeKrakow: 'Office Krakow',
     krakowAddress1: 'ul. Kielecka 19',
     krakowAddress2: 'PL-31-523 Kraków',
+    krakowCountry: 'Poland',
     krakowPhone: 'Phone +48 600 786 706'
   },
 
