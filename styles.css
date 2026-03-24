@@ -24,7 +24,8 @@ body {
   font-family: var(--font-body);
   background: #fff;
   color: #111;
-  padding-top: var(--nav-h);
+  padding-top: var(--nav-h-large);
+  overflow-x: hidden;
 }
 
 h1, h2, h3 { font-family: var(--font-head); }
@@ -833,7 +834,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   width: 100%;
   background: var(--dark);
   padding: 3rem 4rem 3rem;
-  margin-top: var(--nav-h);
+  margin-top: var(--nav-h-large);
   text-align: center;
   border-bottom: 1px solid rgba(201,169,110,.15);
 }
@@ -916,7 +917,7 @@ h1, h2, h3 { font-family: var(--font-head); }
   width: 100%;
   height: clamp(200px, 42vh, 420px); /* viewport-relative so text always shows below */
   overflow: hidden;
-  margin-top: var(--nav-h);
+  margin-top: var(--nav-h-large);
 }
 
 /* Intro section directly below hero — compact so text is visible without scrolling */
@@ -1243,23 +1244,71 @@ h1, h2, h3 { font-family: var(--font-head); }
 
 /* ── Responsive ───────────────────────────────────── */
 @media (max-width: 768px) {
-  .service-hero { height: clamp(160px, 35vh, 280px); }
+  /* Navbar — compact on mobile */
+  .navbar { height: var(--nav-h); padding: 0 1rem; }
+  body { padding-top: var(--nav-h); }
+  .nav-logo { height: 30px; }
+  .nav-logo-text { font-size: 1rem; }
+  .nav-toggle, .btn-lang { padding: .35rem .7rem; font-size: .75rem; }
+
+  /* Section padding */
+  .section { padding: 5rem 1.5rem; }
+
+  /* Service page hero & page hero */
+  .service-hero { height: clamp(160px, 35vh, 280px); margin-top: var(--nav-h); }
   .service-hero-overlay { padding: 1.5rem; }
+  .page-hero { margin-top: var(--nav-h); padding: 2rem 1.5rem; }
+
+  /* About — stack vertically so text has full width */
+  .about-layout { flex-direction: column; gap: 2.5rem; }
+  .about-image img { max-width: 100%; }
+
+  /* Service bullets & archetype cards */
   .service-bullets { grid-template-columns: 1fr; }
   .who-for-grid { grid-template-columns: 1fr; }
   .cta-layout { flex-direction: column; gap: 3rem; }
   .cta-right { flex-direction: row; flex-wrap: wrap; gap: 2rem 3rem; }
+
+  /* Practice areas grid — 2 columns on tablet */
   .services-grid { grid-template-columns: repeat(2, 1fr); }
-  .partners-grid { grid-template-columns: 1fr; gap: 3rem; }
+
+  /* Partners — stack vertically (flex container, not grid) */
+  .partners-grid { flex-direction: column; align-items: center; gap: 3rem; }
+  .partner-card img { width: 180px; height: 180px; }
+
+  /* Offices */
   .offices-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+
+  /* Partner detail & services detail (page2) */
   .partner-detail-card { grid-template-columns: 1fr; }
+  .partner-detail-img { width: 100%; height: auto; max-width: 280px; }
   .services-detail-grid { grid-template-columns: 1fr; }
+
+  /* Publications */
   .pub-grid { grid-template-columns: 1fr; max-width: 480px; }
   .pub-card { width: 100%; min-height: auto; }
-.section { padding: 5rem 2rem; }
+
+  /* Footer — 2-column on tablet */
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .site-footer { padding: 3rem 1.5rem 2rem; }
 }
 
 @media (max-width: 480px) {
+  /* Tighter section padding on small phones */
+  .section { padding: 3.5rem 1.25rem; }
+
+  /* Hero headline — scale down on small screens */
+  .hero-headline { font-size: clamp(2rem, 10vw, 3rem); }
+
+  /* Practice areas — single column on phone */
   .services-grid { grid-template-columns: 1fr; }
+
+  /* Partners */
+  .partner-card img { width: 140px; height: 140px; }
+
+  /* Footer — single column on phone */
   .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+
+  /* Navbar actions spacing */
+  .nav-actions { gap: .35rem; }
 }
