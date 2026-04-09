@@ -9,6 +9,7 @@ export const en = {
     insights: 'Publications',
     clientLogin: 'Client Login',
     backToPracticeAreas: 'Practice Areas',
+    backToPartners: 'Our Partners',
     languageDeutsch: 'Deutsch',
     languageEnglish: 'English'
   },
@@ -42,8 +43,8 @@ export const en = {
     remoName: 'Remo Mairhofer',
     remoTitle: 'Attorney-at-Law | Trustee | Founder & CEO',
     remoBio: 'M.A. HSG (Law), M.A. HSG (Banking and Finance)<br>LL.M., CII (Award)',
-    tomaszName: 'Dr. iur. Tomasz Klimek',
-    tomaszTitle: 'Public Notary | Attorney-at-Law (FL, A & PL) | Partner',
+    tomaszName: 'Tomasz Klimek',
+    tomaszTitle: 'Attorney-at-Law (FL, A & PL) | Notary Public | Partner',
     tomaszBio: 'LL.M.',
     viewProfile: 'View profile →'
   },
@@ -57,7 +58,7 @@ export const en = {
   },
 
   contact: {
-    title: 'Contact & Offices',
+    title: 'Contact',
     getInTouch: 'Get in Touch',
     name: 'Name',
     email: 'Email',
@@ -98,7 +99,7 @@ export const en = {
     remoBio1: 'Remo Mairhofer is an Attorney-at-Law and licensed trustee, serving as Founder and CEO of LUMEN ADVISORY Trust reg. and founder of Mairhofer Advokatur in Liechtenstein. His work focuses on the establishment, governance, and ongoing supervision of trust and foundation structures, advising intermediaries and private clients in cross-border structures.',
     remoBio2: 'He holds degrees in Law and Banking & Finance from the University of St. Gallen and an LL.M. from the University of Sydney. He is admitted to the Liechtenstein Bar, has completed the Liechtenstein trustee examinations, and serves as a Substitute Judge at the Constitutional Court of Liechtenstein.',
     tomaszName: 'Dr. Tomasz Klimek',
-    tomaszTitle: 'Public Notary | Attorney-at-Law (FL, A & PL) | Partner',
+    tomaszTitle: 'Attorney-at-Law (FL, A & PL) | Notary Public | Partner',
     tomaszBio1: 'Dr. Tomasz Klimek is a Public Notary and Attorney-at-Law in Liechtenstein and a partner at Mairhofer Advokatur. He advises on and oversees legally complex fiduciary and corporate structures, with a particular focus on cross-border foundations, holding entities, and asset-holding arrangements involving Liechtenstein, Austria, and Poland.',
     tomaszBio2: 'Dr. Klimek holds a Doctor of Laws from the University of Vienna and multiple LL.M. degrees in company, foundation, and trust law. He is admitted to the bar in Liechtenstein, Austria, and Poland and is the only Polish-speaking attorney in Liechtenstein, allowing him to bridge jurisdictions with precision and accountability.',
     servicesTitle: 'Our Services',

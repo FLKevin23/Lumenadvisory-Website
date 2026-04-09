@@ -11,8 +11,8 @@
   --cream:   #F8F2E6;
   --accent:  #E36D33;
   --text:    #ffffff;
-  --nav-h:       60px;
-  --nav-h-large: 85px;
+  --nav-h:       65px;
+  --nav-h-large: 90px;
 }
 
 /* ── Base ─────────────────────────────────────────── */
@@ -59,14 +59,14 @@ h1, h2, h3 { font-family: var(--font-head); }
 }
 
 .nav-logo {
-  height: 46px;
+  height: 58px;
   width: auto;
   display: block;
   object-fit: contain;
   transition: height .35s ease;
 }
 .navbar.scrolled .nav-logo {
-  height: 36px;
+  height: 45px;
 }
 
 .nav-logo-text {
@@ -1023,7 +1023,7 @@ h1, h2, h3 { font-family: var(--font-head); }
 .faq-list {
   max-width: 780px;
   width: 100%;
-  margin-top: 2rem;
+  margin: 2rem auto 0;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -1090,6 +1090,7 @@ h1, h2, h3 { font-family: var(--font-head); }
 .faq-answer p {
   margin: 0;
   padding-bottom: 1.25rem;
+  padding-left: 1.5rem;
   color: var(--cream);
   font-size: .95rem;
   line-height: 1.7;

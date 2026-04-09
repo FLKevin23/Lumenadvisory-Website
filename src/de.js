@@ -9,6 +9,7 @@ export const de = {
     insights: 'Publikationen',
     clientLogin: 'Kundenportal',
     backToPracticeAreas: 'Leistungsbereiche',
+    backToPartners: 'Unsere Partner',
     languageDeutsch: 'Deutsch',
     languageEnglish: 'English'
   },
@@ -42,8 +43,8 @@ export const de = {
     remoName: 'Remo Mairhofer',
     remoTitle: 'Rechtsanwalt | Treuhänder | Gründer & CEO',
     remoBio: 'M.A. HSG (Recht), M.A. HSG (Banking and Finance)<br>LL.M., CII (Award)',
-    tomaszName: 'Dr. iur. Tomasz Klimek',
-    tomaszTitle: 'Öffentlicher Notar | Rechtsanwalt (FL, A & PL) | Partner',
+    tomaszName: 'Tomasz Klimek',
+    tomaszTitle: 'Rechtsanwalt (FL, A & PL) | Öffentlicher Notar | Partner',
     tomaszBio: 'LL.M.',
     viewProfile: 'Profil ansehen →'
   },
@@ -57,7 +58,7 @@ export const de = {
   },
 
   contact: {
-    title: 'Kontakt & Büros',
+    title: 'Kontakt',
     getInTouch: 'Kontaktieren Sie uns',
     name: 'Name',
     email: 'E-Mail',
@@ -98,7 +99,7 @@ export const de = {
     remoBio1: 'Remo Mairhofer ist Rechtsanwalt und lizenzierter Treuhänder, Gründer und CEO der LUMEN ADVISORY Trust reg. und Gründer von Mairhofer Advokatur in Liechtenstein. Seine Arbeit konzentriert sich auf die Gründung, Verwaltung und laufende Überwachung von Treuhand- und Stiftungsstrukturen und berät Intermediäre und Privatpersonen in grenzüberschreitenden Strukturen.',
     remoBio2: 'Er hat Abschlüsse in Jura und Banking & Finance von der Universität St. Gallen und einen LL.M. von der Universität Sydney. Er ist in der liechtensteinischen Kanzlei zugelassen, hat die liechtensteinischen Treuhänderprüfungen bestanden und ist Stellvertreter Richter am Verfassungsgericht Liechtensteins.',
     tomaszName: 'Dr. Tomasz Klimek',
-    tomaszTitle: 'Öffentlicher Notar | Rechtsanwalt (FL, A & PL) | Partner',
+    tomaszTitle: 'Rechtsanwalt (FL, A & PL) | Öffentlicher Notar | Partner',
     tomaszBio1: 'Dr. Tomasz Klimek ist öffentlicher Notar und Rechtsanwalt in Liechtenstein sowie Partner bei Mairhofer Advokatur. Er berät und beaufsichtigt rechtlich komplexe Treuhand- und Unternehmensstrukturen, mit besonderem Fokus auf grenzüberschreitende Stiftungen, Holdinggesellschaften und Vermögensverwaltungsanordnungen in Liechtenstein, Österreich und Polen.',
     tomaszBio2: 'Dr. Klimek hat einen Doktor der Rechte von der Universität Wien und mehrere LL.M. Abschlüsse in Unternehmens-, Stiftungs- und Treuhandrecht. Er ist in Liechtenstein, Österreich und Polen zugelassen und ist der einzige polnischsprachige Rechtsanwalt in Liechtenstein, was ihm ermöglicht, Gerichtsbarkeiten mit Präzision und Verantwortung zu überbrücken.',
     servicesTitle: 'Unsere Dienstleistungen',
