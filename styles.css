@@ -1090,7 +1090,7 @@ h1, h2, h3 { font-family: var(--font-head); }
 .faq-answer p {
   margin: 0;
   padding-bottom: 1.25rem;
-  padding-left: 4rem;
+  padding-left: 8rem;
   color: var(--cream);
   font-size: .95rem;
   line-height: 1.7;
@@ -1307,4 +1307,7 @@ h1, h2, h3 { font-family: var(--font-head); }
 
   /* Navbar actions spacing */
   .nav-actions { gap: .35rem; }
+
+  /* FAQ — reduce answer indent on small screens */
+  .faq-answer p { padding-left: 1rem; }
 }
