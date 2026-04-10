@@ -1283,6 +1283,9 @@ h1, h2, h3 { font-family: var(--font-head); }
   .pub-grid { grid-template-columns: 1fr; max-width: 480px; }
   .pub-card { width: 100%; min-height: auto; }
 
+  /* FAQ — reduce answer indent on tablet */
+  .faq-answer p { padding-left: 4rem; }
+
   /* Footer — brand + memberships side by side, offices full-width below */
   .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
   .footer-offices { grid-template-columns: 1fr; gap: 1rem; }
