@@ -1236,6 +1236,23 @@ h1, h2, h3 { font-family: var(--font-head); }
   opacity: .35;
   margin: 0;
 }
+.footer-legal-links {
+  margin: 0.4rem 0 0;
+  font-size: .75rem;
+  font-family: var(--font-body);
+}
+.footer-legal-links a {
+  color: var(--cream);
+  opacity: .35;
+  text-decoration: none;
+  transition: opacity .2s;
+}
+.footer-legal-links a:hover { opacity: .7; }
+.footer-legal-sep {
+  color: var(--cream);
+  opacity: .2;
+  margin: 0 .5rem;
+}
 
 /* ── Responsive ───────────────────────────────────── */
 @media (max-width: 768px) {

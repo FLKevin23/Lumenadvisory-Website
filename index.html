@@ -97,15 +97,7 @@
         <button class="nav-toggle" id="navToggle" aria-expanded="false">Menu ▾</button>
         <div class="dropdown" id="dropdown">
           <a href="#who-we-are" data-translate="aboutUs.title">About</a>
-          <a class="submenu-trigger" id="practiceAreasToggle" data-translate="practiceAreas.title">Practice Areas</a>
-          <div class="submenu" id="practiceAreasSubmenu">
-            <a href="family-office.html" data-translate="practiceAreas.familyOffice">Family Office</a>
-            <a href="succession-planning.html" data-translate="practiceAreas.successionPlanning">Succession Planning</a>
-            <a href="relocation.html" data-translate="practiceAreas.relocationServices">Relocation Services</a>
-            <a href="philanthropy.html" data-translate="practiceAreas.philanthropy">Philanthropy</a>
-            <a href="accounting.html" data-translate="practiceAreas.accounting">Accounting</a>
-            <a href="legal-notarial.html" data-translate="practiceAreas.legalAdvice">Legal &amp; Notarial Services</a>
-          </div>
+          <a href="#what-we-do" data-translate="practiceAreas.title">Practice Areas</a>
           <a href="#our-partners" data-translate="partners.title">Our Partners</a>
           <a href="#faq" data-translate="faq.title">FAQ</a>
           <a href="#contact" data-translate="contact.title">Contact</a>
@@ -363,6 +355,13 @@
       </div>
       <div class="footer-bottom">
         <p class="footer-copy" data-translate="footer.copyright">© 2026 Lumenadvisory. All rights reserved.</p>
+        <p class="footer-legal-links">
+          <a href="sitemap.html">Sitemap</a>
+          <span class="footer-legal-sep">·</span>
+          <a href="data-protection.html">Privacy Policy</a>
+          <span class="footer-legal-sep">·</span>
+          <a href="imprint.html">Imprint</a>
+        </p>
       </div>
     </div>
   </footer>
@@ -391,24 +390,12 @@
       toggle.classList.remove('open');
     });
 
-    const practiceToggle  = document.getElementById('practiceAreasToggle');
-    const practiceSubmenu = document.getElementById('practiceAreasSubmenu');
-
-    practiceToggle.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      practiceToggle.classList.toggle('open');
-      practiceSubmenu.classList.toggle('open');
-    });
-
     document.addEventListener('click', () => {
       dropdown.classList.remove('open');
       toggle.classList.remove('open');
       toggle.setAttribute('aria-expanded', false);
       langDropdown.classList.remove('open');
       langToggle.classList.remove('open');
-      practiceToggle.classList.remove('open');
-      practiceSubmenu.classList.remove('open');
     });
 
     (function () {
