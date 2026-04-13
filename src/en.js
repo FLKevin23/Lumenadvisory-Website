@@ -22,7 +22,7 @@ export const en = {
 
   aboutUs: {
     title: 'About',
-    para1: 'Most people don\'t start by looking for a trustee. They start with a question — how to protect what they\'ve built, how to structure a cross-border life, or how to ensure what they\'ve created outlasts them.',
+    para1: 'Clients rarely arrive with a mandate already defined. They arrive with a question: how to protect what they have built, how to structure a life that spans borders, or how to ensure what they have created outlasts them.',
     para2: 'Lumen Advisory exists for that moment.',
     para3: 'We partner with internationally minded entrepreneurs, founders and families who need clarity before they need a product. As an independent trustee company based in Liechtenstein, we combine fiduciary and legal expertise to build structures that actually fit: asset protection, succession planning, relocation and family governance.',
     para4: 'With offices in Liechtenstein, Vienna and Kraków, we work where our clients live — particularly across Central and Eastern Europe.'
@@ -134,16 +134,16 @@ export const en = {
 
   faq: {
     title: 'FAQ',
-    faq1q: 'What does an independent trustee company actually do?',
-    faq1a: 'A trustee company manages the legal structures that hold and protect assets — foundations, trusts, and companies. We handle the governance, administration, and continuity of these structures on behalf of our clients. Unlike a private bank or wealth manager, we don\'t invest money. We build and maintain the architecture around it.',
-    faq2q: 'Why Liechtenstein?',
-    faq2a: 'Liechtenstein has one of the oldest and most respected legal frameworks for foundations and trusts in the world — its foundation law dates to 1926. It sits within the European Economic Area, offers strong regulatory oversight, and maintains a reputation for legal stability and discretion. For internationally minded clients, it provides a credible and well-recognised home for long-term structures.',
-    faq3q: 'Who do you typically work with?',
-    faq3a: 'Our clients are typically self-made entrepreneurs, founders and families with assets, business interests or family members across multiple countries. Many are relocating, restructuring their holdings, or planning for the next generation. They come to us not because they have found a product, but because they have a question that hasn\'t been answered well yet.',
-    faq4q: 'Do I need to live in Liechtenstein to work with you?',
-    faq4a: 'No. Most of our clients are not based in Liechtenstein. We work primarily across Central and Eastern Europe — with a particular focus on Austria, Poland and Germany — and advise internationally. Our offices in Schaan, Vienna and Kraków mean we can meet clients where they live and operate.',
-    faq5q: 'How do we begin?',
-    faq5a: 'Most mandates start with a conversation, not a form. We take time to understand your situation, your goals, and whether our expertise is the right fit. From there we scope a first engagement — a structural review, a specific transaction, or a longer-term advisory mandate.'
+    faq1q: 'Why Lumen Advisory, and what does it cost?',
+    faq1a: 'We are an independent trustee company. Our fees are scope-based and agreed at the outset of each mandate. We earn no commissions on products, funds, or investments. What that means in practice: the advice you receive is shaped by your structure, not by what generates revenue for us. For clients with significant wealth across borders, that independence, combined with our legal and fiduciary expertise under one roof, is what most single-jurisdiction advisors cannot offer.',
+    faq2q: 'What makes a Liechtenstein structure the right choice?',
+    faq2a: 'Liechtenstein is the only jurisdiction in the world that combines Anglo-American trust law with European civil law. Your structure carries the flexibility of both traditions within a single, coherent framework. Its foundation law dates to 1926. It sits within the European Economic Area, holds a AAA sovereign rating, and appears on no grey list. Banks and regulatory authorities recognise Liechtenstein structures without friction, wherever you operate. For internationally minded clients, that recognition is not a nice-to-have. It is the point.',
+    faq3q: 'What kind of clients do you work with?',
+    faq3a: 'Founders, entrepreneurs, and multi-generational families with assets, interests, or family members across multiple jurisdictions. Typically clients who have already built something substantial and now need it governed properly, not advised ad hoc. Many come to us during a transition: a business exit, a relocation, a succession conversation that has become urgent. They come because they have a specific question that their existing advisors have not fully answered.',
+    faq4q: 'How do you manage mandates across multiple countries and time zones?',
+    faq4a: 'Most of our clients are not based in Liechtenstein. We operate primarily across Central and Eastern Europe, with offices in Schaan, Vienna, and Kraków, and advise clients internationally. The structure is domiciled in Liechtenstein; the relationship is built where the client lives. Mandates are managed with defined reporting cadences, documented governance, and direct partner access, not delegated to junior staff.',
+    faq5q: 'What does the first conversation look like?',
+    faq5a: 'It is a conversation, not a pitch. We take time to understand your situation: your existing structures, your goals, and where complexity has built up. If there is a clear fit, we scope a first engagement together: a structural review, a specific transaction, or an ongoing advisory mandate. We do not propose solutions before we understand the question.'
   },
 
   familyOfficePage: {
@@ -268,8 +268,8 @@ export const en = {
     whoFor1: 'You oversee a Liechtenstein foundation holding both traditional investments and digital assets, and need reporting that satisfies trustees, regulators, and auditors alike.',
     whoFor2Label: 'The Multi-Jurisdiction Owner',
     whoFor2: 'Your assets span multiple countries and legal forms. You need one consolidated picture, not fragmented statements from separate advisors.',
-    whoFor3Label: 'The Crypto Investor',
-    whoFor3: 'You hold DeFi positions, staking rewards, or tokenised assets and need accounting treatment that is accurate, auditable, and jurisdiction-aware.',
+    whoFor3Label: 'The Digital Asset Holder',
+    whoFor3: 'Your portfolio includes significant cryptocurrency positions, on-chain activity, or tokenised holdings alongside conventional assets. You need a single consolidated picture, not separate statements, and accounting treatment that holds up to trustee and regulatory scrutiny across jurisdictions.',
     faq1q: 'What does accounting for a Liechtenstein foundation involve?',
     faq1a: 'Liechtenstein foundations are required to maintain proper accounting records and, depending on their size and activities, may be subject to audit requirements. We prepare annual accounts, manage bookkeeping, and ensure that the foundation\'s financial records are accurate, compliant, and suitable for trustee oversight.',
     faq2q: 'How do you handle reporting for crypto holdings and DeFi positions?',

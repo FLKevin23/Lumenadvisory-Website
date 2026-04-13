@@ -22,7 +22,7 @@ export const de = {
 
   aboutUs: {
     title: 'Über uns',
-    para1: 'Die meisten Menschen suchen nicht von Anfang an nach einem Treuhänder. Sie beginnen mit einer Frage — wie sie schützen, was sie aufgebaut haben, wie sie ein grenzüberschreitendes Leben strukturieren oder wie sie sicherstellen, dass ihr Lebenswerk Bestand hat.',
+    para1: 'Mandanten kommen selten mit einem bereits definierten Auftrag. Sie kommen mit einer Frage: wie sie schützen, was sie aufgebaut haben, wie sie ein Leben strukturieren, das Grenzen überspannt, oder wie sie sicherstellen, dass ihr Lebenswerk Bestand hat.',
     para2: 'Für diesen Moment ist Lumen Advisory da.',
     para3: 'Wir arbeiten mit international ausgerichteten Unternehmern, Gründern und Familien zusammen, die Klarheit brauchen, bevor sie ein Produkt brauchen. Als unabhängiges Treuhandunternehmen mit Sitz in Liechtenstein verbinden wir treuhänderische Expertise mit rechtlicher und notarieller Erfahrung, um Strukturen zu schaffen, die wirklich passen: Vermögensschutz, Nachfolgeplanung, Relocation und Familienverwaltung.',
     para4: 'Mit Büros in Liechtenstein, Wien und Krakau arbeiten wir dort, wo unsere Kunden leben — insbesondere in Mittel- und Osteuropa.'
@@ -134,16 +134,16 @@ export const de = {
 
   faq: {
     title: 'FAQ',
-    faq1q: 'Was macht ein unabhängiges Treuhandunternehmen eigentlich?',
-    faq1a: 'Ein Treuhandunternehmen verwaltet die rechtlichen Strukturen, die Vermögen halten und schützen – Stiftungen, Trusts und Gesellschaften. Wir übernehmen die Governance, Administration und Kontinuität dieser Strukturen im Auftrag unserer Mandanten. Anders als eine Privatbank oder ein Vermögensverwalter investieren wir kein Geld. Wir bauen und pflegen die Architektur darum herum.',
-    faq2q: 'Warum Liechtenstein?',
-    faq2a: 'Liechtenstein verfügt über eines der ältesten und angesehensten Rechtsrahmen für Stiftungen und Trusts weltweit – das Stiftungsrecht datiert auf 1926. Es ist Teil des Europäischen Wirtschaftsraums, bietet eine starke Regulierungsaufsicht und genießt einen Ruf für Rechtssicherheit und Diskretion. Für international ausgerichtete Mandanten bietet es eine glaubwürdige und anerkannte Heimat für langfristige Strukturen.',
-    faq3q: 'Mit wem arbeiten Sie typischerweise zusammen?',
-    faq3a: 'Unsere Mandanten sind typischerweise selbstgemachte Unternehmer, Gründer und Familien mit Vermögen, Geschäftsinteressen oder Familienmitgliedern in mehreren Ländern. Viele restrukturieren ihre Vermögensstruktur oder planen für die nächste Generation. Sie kommen zu uns nicht weil sie ein Produkt gefunden haben, sondern weil sie eine Frage haben, die bisher nicht gut beantwortet wurde.',
-    faq4q: 'Muss ich in Liechtenstein wohnen, um mit Ihnen zu arbeiten?',
-    faq4a: 'Nein. Die meisten unserer Mandanten sind nicht in Liechtenstein ansässig. Wir arbeiten vorwiegend in Mittel- und Osteuropa – mit besonderem Fokus auf Österreich, Polen und Deutschland – und beraten international. Unsere Büros in Schaan, Wien und Krakau ermöglichen es uns, dort zu arbeiten, wo unsere Mandanten leben und wirken.',
-    faq5q: 'Wie beginnen wir?',
-    faq5a: 'Die meisten Mandate beginnen mit einem Gespräch, nicht mit einem Formular. Wir nehmen uns Zeit, Ihre Situation, Ihre Ziele und ob unsere Expertise die richtige Passung ist zu verstehen. Daraus leiten wir einen ersten Schritt ab – eine Strukturanalyse, eine spezifische Transaktion oder ein längerfristiges Beratungsmandat.'
+    faq1q: 'Warum Lumen Advisory, und was kostet es?',
+    faq1a: 'Wir sind ein unabhängiges Treuhandunternehmen. Unsere Honorare sind leistungsbasiert und werden zu Beginn jedes Mandats vereinbart. Wir erhalten keine Provisionen auf Produkte, Fonds oder Anlagen. Was das in der Praxis bedeutet: Die Beratung, die Sie erhalten, orientiert sich an Ihrer Struktur, nicht daran, was für uns Erträge generiert. Für Mandanten mit bedeutendem Vermögen über Grenzen hinweg ist diese Unabhängigkeit, kombiniert mit unserer rechtlichen und treuhänderischen Expertise unter einem Dach, das, was die meisten Berater in einer einzigen Rechtsordnung nicht bieten können.',
+    faq2q: 'Was macht eine liechtensteinische Struktur zur richtigen Wahl?',
+    faq2a: 'Liechtenstein ist die einzige Jurisdiktion weltweit, die anglo-amerikanisches Trust-Recht mit europäischem Zivilrecht verbindet. Ihre Struktur vereint die Flexibilität beider Rechtstraditionen in einem einzigen, kohärenten Rahmen. Das Stiftungsrecht datiert auf 1926. Liechtenstein ist Mitglied des Europäischen Wirtschaftsraums, verfügt über ein AAA-Sovereign-Rating und erscheint auf keiner Greylist. Banken und Behörden erkennen liechtensteinische Strukturen reibungslos an, wo auch immer Sie tätig sind. Für international ausgerichtete Mandanten ist diese Anerkennung kein Beiwerk. Sie ist der entscheidende Punkt.',
+    faq3q: 'Welche Art von Mandanten betreuen Sie?',
+    faq3a: 'Gründer, Unternehmer und Mehrgenerationenfamilien mit Vermögen, Interessen oder Familienmitgliedern in mehreren Rechtsordnungen. In der Regel Mandanten, die bereits Bedeutendes aufgebaut haben und es nun ordentlich verwaltet sehen möchten, nicht ad hoc beraten. Viele kommen zu uns in einer Übergangsphase: ein Unternehmensverkauf, ein Umzug, ein Nachfolgegespräch, das dringend geworden ist. Sie kommen, weil sie eine konkrete Frage haben, die ihre bisherigen Berater nicht vollständig beantwortet haben.',
+    faq4q: 'Wie betreuen Sie Mandate in mehreren Ländern und Zeitzonen?',
+    faq4a: 'Die meisten unserer Mandanten sind nicht in Liechtenstein ansässig. Wir sind hauptsächlich in Mittel- und Osteuropa tätig, mit Büros in Schaan, Wien und Krakau, und beraten international. Die Struktur hat ihren Sitz in Liechtenstein; die Beziehung wird dort aufgebaut, wo der Mandant lebt. Mandate werden mit definierten Berichtsrhythmen, dokumentierter Governance und direktem Partnerzugang geführt, nicht an Mitarbeiter delegiert.',
+    faq5q: 'Wie sieht das erste Gespräch aus?',
+    faq5a: 'Es ist ein Gespräch, kein Pitch. Wir nehmen uns Zeit, Ihre Situation zu verstehen: Ihre bestehenden Strukturen, Ihre Ziele und wo sich Komplexität aufgebaut hat. Wenn die Passung stimmt, definieren wir gemeinsam einen ersten Schritt: eine Strukturanalyse, eine spezifische Transaktion oder ein laufendes Beratungsmandat. Wir schlagen keine Lösungen vor, bevor wir die Frage verstanden haben.'
   },
 
   familyOfficePage: {
@@ -268,8 +268,8 @@ export const de = {
     whoFor1: 'Sie beaufsichtigen eine liechtensteinische Stiftung mit traditionellen und digitalen Assets und benötigen Berichte, die Treuhänder, Regulierungsbehörden und Prüfer gleichermaßen überzeugen.',
     whoFor2Label: 'Der Multi-Jurisdiktions-Inhaber',
     whoFor2: 'Ihre Assets erstrecken sich über mehrere Länder und Rechtsformen. Sie benötigen ein konsolidiertes Gesamtbild — keine fragmentierten Abschlüsse von verschiedenen Beratern.',
-    whoFor3Label: 'Der Kryptoinvestor',
-    whoFor3: 'Sie halten DeFi-Positionen, Staking-Erträge oder tokenisierte Assets und benötigen eine buchhalterische Behandlung, die präzise, prüfbar und jurisdiktionsbewusst ist.',
+    whoFor3Label: 'Der Inhaber digitaler Assets',
+    whoFor3: 'Ihr Portfolio umfasst bedeutende Kryptowährungs-Positionen, On-Chain-Aktivitäten oder tokenisierte Bestände neben konventionellen Vermögenswerten. Sie benötigen ein einziges konsolidiertes Bild, keine getrennten Abschlüsse, und eine buchhalterische Behandlung, die der Treuhänder- und Regulierungsprüfung über mehrere Rechtsordnungen standhält.',
     faq1q: 'Was beinhaltet die Buchhaltung für eine liechtensteinische Stiftung?',
     faq1a: 'Liechtensteinische Stiftungen sind verpflichtet, ordnungsgemäße Buchhaltungsunterlagen zu führen und können je nach Größe und Aktivitäten prüfungspflichtig sein. Wir erstellen Jahresabschlüsse, führen die Buchhaltung und stellen sicher, dass die Finanzunterlagen der Stiftung präzise, konform und für die Treuhänderaufsicht geeignet sind.',
     faq2q: 'Wie gehen Sie mit dem Reporting für Krypto-Bestände und DeFi-Positionen um?',
