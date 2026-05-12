@@ -84,7 +84,15 @@
 
     <!-- Hero -->
     <section class="service-hero">
-      <img src="assets/images/portfolio/Succession Planning.png" alt="Succession Planning" loading="lazy" />
+      <img
+        src="/.netlify/images?url=/assets/images/portfolio/Succession%20Planning.png&w=900&q=80"
+        srcset="
+          /.netlify/images?url=/assets/images/portfolio/Succession%20Planning.png&w=480&q=80 480w,
+          /.netlify/images?url=/assets/images/portfolio/Succession%20Planning.png&w=900&q=80 900w,
+          /.netlify/images?url=/assets/images/portfolio/Succession%20Planning.png&w=1400&q=80 1400w
+        "
+        sizes="(max-width: 640px) 480px, (max-width: 1200px) 900px, 1400px"
+        alt="Succession Planning" loading="lazy" />
       <div class="service-hero-overlay">
         <h1 data-translate="successionPlanningPage.title">Succession Planning</h1>
       </div>
