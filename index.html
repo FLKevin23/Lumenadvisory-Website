@@ -402,12 +402,12 @@
       const video = document.getElementById('heroVideo');
       video.playbackRate = 0.75;
       const fade  = document.getElementById('heroLoopFade');
-      const FADE_START = 1.5;
+      const FADE_START = 3;
 
       video.addEventListener('timeupdate', () => {
         const remaining = video.duration - video.currentTime;
         if (remaining <= FADE_START) {
-          fade.style.opacity = 1 - (remaining / FADE_START);
+          fade.style.opacity = Math.pow(1 - (remaining / FADE_START), 0.5);
         }
       });
 
