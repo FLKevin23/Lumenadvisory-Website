@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /login.html
+Disallow: /admin.html
+Disallow: /client.html
+
+Sitemap: https://www.lumenadvisory.com/sitemap.xml
