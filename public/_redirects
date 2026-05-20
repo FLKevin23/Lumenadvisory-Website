@@ -1,2 +1,3 @@
-﻿/robots.txt        /robots.txt        200
+﻿https://www.lumenadvisory.li/* https://lumenadvisory.li/:splat 301!
+/robots.txt        /robots.txt        200
 /sitemap.xml       /sitemap.xml       200
