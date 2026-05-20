@@ -5,3 +5,4 @@ Disallow: /admin.html
 Disallow: /client.html
 
 Sitemap: https://lumenadvisory.li/sitemap.xml
+Sitemap: https://lumenadvisory.li/video-sitemap.xml
