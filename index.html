@@ -451,6 +451,11 @@
           }));
         }, 2000);
       });
+
+      new IntersectionObserver(
+        ([entry]) => entry.isIntersecting ? video.play() : video.pause(),
+        { threshold: 0 }
+      ).observe(video);
     })();
 
     const revealObserver = new IntersectionObserver(
