@@ -19,6 +19,7 @@ export default defineConfig({
         'data-protection':     resolve(__dirname, 'data-protection.html'),
         sitemap:               resolve(__dirname, 'sitemap.html'),
         imprint:               resolve(__dirname, 'imprint.html'),
+        linkedin:              resolve(__dirname, 'linkedin.html'),
       }
     }
   }
