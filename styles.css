@@ -1275,6 +1275,8 @@ h1, h2, h3 { font-family: var(--font-head); }
   font-size: .75rem;
   font-family: var(--font-body);
 }
+.site-footer--minimal { padding: 1.75rem 3rem; }
+.site-footer--minimal .footer-bottom { border-top: none; padding-top: 0; }
 .footer-legal-links a {
   color: var(--cream);
   opacity: .35;
