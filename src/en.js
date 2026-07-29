@@ -54,7 +54,8 @@ export const en = {
     heroTagline: 'The people behind Lumen Advisory',
     linkedinTitle: 'Connect on LinkedIn',
     linkedinDesc: 'Follow Lumen Advisory for insights on asset protection, succession planning, and Liechtenstein law.',
-    linkedinButton: 'Follow on LinkedIn'
+    linkedinButton: 'Follow on LinkedIn',
+    viewLinkedinProfile: 'View LinkedIn Profile'
   },
 
   contact: {
@@ -112,7 +113,6 @@ export const en = {
     philanthropy: 'Philanthropy',
     accounting: 'Accounting',
     legalNotarial: 'Legal &amp; Notarial Services',
-    ourPartnersPage: 'Our Partners',
     clientLogin: 'Client Login'
   },
 

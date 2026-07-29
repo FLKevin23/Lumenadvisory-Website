@@ -54,7 +54,8 @@ export const de = {
     heroTagline: 'Die Menschen hinter Lumen Advisory',
     linkedinTitle: 'Verbinden Sie sich auf LinkedIn',
     linkedinDesc: 'Folgen Sie Lumen Advisory für Einblicke in Vermögensschutz, Nachfolgeplanung und liechtensteinisches Recht.',
-    linkedinButton: 'Auf LinkedIn folgen'
+    linkedinButton: 'Auf LinkedIn folgen',
+    viewLinkedinProfile: 'LinkedIn-Profil ansehen'
   },
 
   contact: {
@@ -112,7 +113,6 @@ export const de = {
     philanthropy: 'Philanthropie',
     accounting: 'Buchhaltung',
     legalNotarial: 'Rechts- und Notariatsdienste',
-    ourPartnersPage: 'Unsere Partner',
     clientLogin: 'Kundenportal'
   },
 

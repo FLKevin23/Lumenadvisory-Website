@@ -7,6 +7,8 @@ export default defineConfig({
       input: {
         main:                  resolve(__dirname, 'index.html'),
         page2:                 resolve(__dirname, 'page2.html'),
+        'remo-mairhofer':      resolve(__dirname, 'remo-mairhofer.html'),
+        'tomasz-klimek':       resolve(__dirname, 'tomasz-klimek.html'),
         login:                 resolve(__dirname, 'login.html'),
         admin:                 resolve(__dirname, 'admin.html'),
         client:                resolve(__dirname, 'client.html'),
